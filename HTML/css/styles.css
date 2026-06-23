@@ -145,17 +145,8 @@ body {
 }
 
 /* ---- Nav Logo Image ---- */
-.nav-logo-img {
-    height: 90px;
-    width: auto;
-    transition: all 0.3s ease;
-}
-
 @media (min-width: 768px) {
-    .nav-logo-img {
-        height: 120px;
     }
-}
 
 .footer-logo-img {
     height: 40px;
@@ -168,14 +159,6 @@ body {
     border-bottom-color: rgba(255, 255, 255, 0.1) !important;
     box-shadow: none !important;
     backdrop-filter: none !important;
-}
-
-[data-nav-transparent] #mainNav .nav-logo-img.logo-dark {
-    display: none;
-}
-
-[data-nav-transparent] #mainNav .nav-logo-img.logo-light {
-    display: block;
 }
 
 [data-nav-transparent] #mainNav .nav-link {
@@ -198,14 +181,6 @@ body {
 }
 
 /* When scrolled (transparent nav becomes solid) */
-[data-nav-transparent] #mainNav.nav-scrolled .nav-logo-img.logo-dark {
-    display: block;
-}
-
-[data-nav-transparent] #mainNav.nav-scrolled .nav-logo-img.logo-light {
-    display: none;
-}
-
 [data-nav-transparent] #mainNav.nav-scrolled .nav-link {
     color: #4c444f;
     text-shadow: none;
@@ -226,4 +201,42 @@ body {
 
 [data-nav-transparent] #mainNav.nav-scrolled .mobile-menu-btn {
     color: #6a3987;
+}
+
+/* ---- Logo Banner Styles ---- */
+.banner-placeholder {
+    width: 120px;
+}
+.logo-banner-wrapper {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.1));
+    transition: top 0.3s ease;
+}
+#mainNav.nav-scrolled .logo-banner-wrapper {
+    top: -8px;
+}
+.logo-banner-shape {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #ffffff;
+    width: 120px;
+    height: 150px;
+    padding: 15px 15px 30px 15px; /* space for the point */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .banner-placeholder {
+        width: 180px;
+    }
+    .logo-banner-shape {
+        width: 180px;
+        height: 220px;
+        padding: 20px 20px 50px 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    }
 }

@@ -19,10 +19,13 @@
 <!-- TopNavBar -->
     <nav class="fixed top-0 w-full z-50 transition-all duration-500 ease-out py-6 bg-white/95 backdrop-blur-md border-b border-primary/5 shadow-[0px_4px_20px_rgba(132,82,161,0.05)]" id="mainNav">
         <div class="flex justify-between items-center h-20 px-gutter max-w-container-max-width mx-auto">
-            <a href="index.html">
-                <img src="images/logo-dark.png" alt="Amore Forever with Liliana Paton" class="nav-logo-img logo-dark" />
-                <img src="images/logo-light.png" alt="Amore Forever with Liliana Paton" class="nav-logo-img logo-light hidden" />
-            </a>
+            <div class="relative h-full flex items-start z-50 banner-placeholder">
+                <div class="logo-banner-wrapper">
+                    <a href="index.html" class="logo-banner-shape">
+                        <img src="images/logo-dark.png" alt="Amore Forever with Liliana Paton" class="w-full h-auto object-contain mt-4" />
+                    </a>
+                </div>
+            </div>
             <div class="hidden md:flex space-x-8 items-center">
                 <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
                     href="index.html">Home</a>
