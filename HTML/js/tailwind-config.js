@@ -83,7 +83,7 @@ tailwind.config = {
                 "body-md": ["20px", { "lineHeight": "24px", "fontWeight": "400" }],
                 "display-md": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
                 "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                "label-caps": ["14px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                "label-caps": ["16px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
                 "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "400" }],
                 "accent-text": ["24px", { "lineHeight": "32px", "fontWeight": "400" }]
             }
