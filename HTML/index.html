@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Amore Forever with Liliana Paton</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&amp;family=Hanken+Grotesk:wght@400;600&amp;family=Playfair+Display:ital@0;1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#7b4998",
+                        "on-secondary-container": "#75623f",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#f7deff",
+                        "outline": "#7e7480",
+                        "surface-dim": "#dadada",
+                        "on-secondary-fixed-variant": "#554424",
+                        "on-secondary-fixed": "#261901",
+                        "surface-container-highest": "#e2e2e2",
+                        "primary-fixed-dim": "#e6b4ff",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "soft-lilac": "#F8F4FA",
+                        "primary-container": "#8452a1",
+                        "background": "#f9f9f9",
+                        "tertiary-container": "#666c00",
+                        "surface-container": "#eeeeee",
+                        "surface": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "primary-fixed": "#f5d9ff",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#464a00",
+                        "tertiary-fixed": "#e2ea79",
+                        "primary": "#6a3987",
+                        "inverse-primary": "#e6b4ff",
+                        "on-tertiary-fixed": "#1b1d00",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#fadfb3",
+                        "on-primary": "#ffffff",
+                        "secondary": "#6f5c39",
+                        "tertiary-fixed-dim": "#c6cd61",
+                        "on-surface-variant": "#4c444f",
+                        "surface-container-low": "#f3f3f4",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1a1c1c",
+                        "surface-bright": "#f9f9f9",
+                        "outline-variant": "#cfc3d0",
+                        "warm-ivory": "#FFFDF9",
+                        "on-primary-fixed-variant": "#61317e",
+                        "deep-onyx": "#000000",
+                        "on-primary-fixed": "#30004a",
+                        "on-background": "#1a1c1c",
+                        "tertiary": "#4e5300",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#fadfb3",
+                        "on-tertiary-container": "#e6ee7d",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#dcc399"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-padding-sm": "64px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "section-padding-lg": "120px",
+                        "container-max-width": "1200px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Bodoni Moda"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-md": ["Bodoni Moda"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "accent-text": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["72px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-md": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "400" }],
+                        "accent-text": ["24px", { "lineHeight": "32px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .nav-scrolled {
+            background-color: theme('colors.surface-container-lowest');
+            border-bottom: 1px solid rgba(132, 82, 161, 0.05);
+            backdrop-filter: blur(8px);
+        }
+
+        .hero-bg {
+            position: relative;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 253, 249, 1) 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .slow-out {
+            transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+    </style>
+</head>
+
+<body class="bg-warm-ivory text-on-surface font-body-md text-body-md antialiased overflow-x-hidden">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-500 ease-out py-6" id="mainNav">
+        <div class="flex justify-between items-center h-20 px-gutter max-w-container-max-width mx-auto">
+            <a class="font-display-lg text-headline-lg text-primary tracking-tight" href="#">Amore Forever</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a class="text-label-caps font-label-caps tracking-widest text-primary border-b-2 border-primary pb-1"
+                    href="#">Home</a>
+                <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="#">About Me</a>
+                <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="#">Services</a>
+                <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="#">Testimonials</a>
+                <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="#">Contact</a>
+                <a class="ml-8 px-6 py-3 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-80 transition-opacity duration-300 slow-out"
+                    href="#">Inquire Now</a>
+            </div>
+            <button class="md:hidden text-primary p-2">
+                <span class="material-symbols-outlined" data-icon="menu">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative min-h-[921px] flex items-center justify-center hero-bg overflow-hidden pt-32 pb-24">
+        <!-- Background Image -->
+        <div class="absolute inset-0 w-full h-full object-cover z-0"
+            data-alt="A luminous, sunlit outdoor wedding ceremony moment."
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXqtnkOROUgVe3jvMJp8gfkP5oc1TzVzhXcQyJyah8PcRsAQBPMTHc0irO2yPGtMO4czy-HqReohE8G0b_3GdUbqSJEop1I5nQOAl-5Rsyzvnh1_V2Z_CKcXe6XJv_AjP4EcsrZzMIuTqPyBcRuAhXrRXm-WcvUzSWncoSM6cEy113sDD-5_wEOBnY1_qKPG405uNKmzkoG2GPwgvuQfdAMXnXJysHO4G27jx6ojrsHAvkiK1QUVv2IakOdqFS0FlvO6na9bJmNQ'); background-size: cover; background-position: center;">
+        </div>
+        <div class="relative z-10 text-center px-gutter max-w-4xl mx-auto flex flex-col items-center pt-24">
+            <span
+                class="font-accent-text text-accent-text text-primary mb-6 italic opacity-0 transform translate-y-4 animate-fade-up"
+                style="animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.2s;">Welcome to</span>
+            <h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-8 opacity-0 transform translate-y-4 leading-tight"
+                style="animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.4s;">
+                Amore Forever with Liliana Paton
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12 opacity-0 transform translate-y-4"
+                style="animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.6s;">
+                Ceremonies woven with heart, humour, and a touch of magic.
+            </p>
+            <!-- Poem -->
+            <div class="mt-8 mb-16 opacity-0 transform translate-y-4"
+                style="animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.7s;">
+                <h3 class="font-accent-text text-accent-text text-primary mb-6 italic text-2xl">The One</h3>
+                <div
+                    class="font-accent-text text-on-surface-variant italic text-lg leading-loose space-y-4 max-w-lg mx-auto">
+                    <p>When the one whose hand you’re holding,<br />
+                        Is the one one who holds your heart,<br />
+                        When the one whose eyes you gaze into,<br />
+                        Gives your hopes and dreams their start,</p>
+                    <p>When the one you think of first and last<br />
+                        Is the one who holds you tight,<br />
+                        And the things you plan together,<br />
+                        Make the whole world seem just right,</p>
+                    <p>When the one whom you believe in,<br />
+                        Puts their faith and trust in you,<br />
+                        You’ve found the one and only love,<br />
+                        You’ll share your whole life through.</p>
+                </div>
+                <p class="font-body-md text-on-surface-variant mt-6 tracking-wider uppercase text-sm">— Author Unknown
+                </p>
+            </div>
+            <div class="opacity-0 transform translate-y-4"
+                style="animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.8s;">
+                <a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-90 hover:scale-95 transition-all duration-300 slow-out"
+                    href="#contact">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Introduction / About Me Section -->
+    <section class="py-section-padding-lg px-gutter relative bg-warm-ivory">
+        <div class="max-w-container-max-width mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="col-span-1 md:col-span-5 md:col-start-2">
+                    <div class="relative group">
+                        <div
+                            class="absolute inset-0 bg-primary-container opacity-5 transform translate-x-4 translate-y-4 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6">
+                        </div>
+                        <img alt="Portrait of Liliana Paton, Marriage Celebrant"
+                            class="w-full aspect-[4/5] object-cover relative z-10 filter transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3W_r6tyOGRYholrL3t4zLVmPH4uZ4Vk1eVMMc_REVnyyC_GD7VtEs-crhvP9vGr97-LhjFeb1mQe5YCrO5dJeVas7SEt5D-1rY2qgUqtnmP3rdufFRC_PYusFsTsggN2Brw4c8H-aFI1DFEfQz40WpBETpKPHoC1QaKMmozRDVWeMKiYcrPCY5szwD8XfUah9GhV-rR3j4sXY2wuiVjuuK9ZhJ-5Xs4FwHyYSdLgm3KlpluC4iFwX-4hwDWzuHU3i-siQku3qWg" />
+                    </div>
+                </div>
+                <div class="col-span-1 md:col-span-5 md:col-start-8 flex flex-col justify-center space-y-8">
+                    <span class="material-symbols-outlined text-primary opacity-50 block" data-icon="auto_awesome"
+                        style="font-variation-settings: 'FILL' 0; font-size: 2rem;">auto_awesome</span>
+                    <h2 class="font-display-md text-headline-lg-mobile md:text-display-md text-primary leading-tight">
+                        Every ceremony begins as a quiet spark.
+                    </h2>
+                    <div class="space-y-6">
+                        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            A story waiting to be honoured, a promise ready to be spoken, a milestone deserving of a
+                            special celebration...
+                        </p>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            As your celebrant, I craft moments that feel authentically you—blending deep sincerity with
+                            joyful lightness. Your day should feel like an elegant continuation of your unique love
+                            story.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <p class="font-accent-text text-accent-text text-primary italic">Liliana Paton</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section -->
+    <section class="py-section-padding-lg bg-surface">
+        <div class="max-w-container-max-width mx-auto px-gutter text-center mb-16">
+            <h2 class="font-display-md text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Capturing the
+                Magic</h2>
+            <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Experience the emotion, joy, and beauty of
+                ceremonies we've brought to life.</p>
+        </div>
+        <div class="max-w-5xl mx-auto px-gutter">
+            <div
+                class="relative w-full aspect-video bg-surface-variant rounded-lg overflow-hidden group cursor-pointer shadow-lg">
+                <img alt="Cinematic wedding video placeholder"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlAqNcDEWQRb3dfaPp5he-_MvDjgHZ1jC1XhctTQ6Qosw3j-Mjgxu9paaUoJrK48wda30e3y40oLzs0GwFOsECKzxIjkQtaupI4UGGhmfFZNUpL3Q-n3gwGbVHWZyx9jGzvVS_5xw81ioEclnKTgD3mBT7viv0fr5-cDzQiVogwUaEu2hlfzWsrlMQcKlsvgiVwpaFOb_SSCVY7BwB54nxw8M9qAIvuwTQ4m8s7El_-FXAD0jND0ownS8ACFFiniQJ7HIwJPEhvw" />
+                <div
+                    class="absolute inset-0 bg-deep-onyx bg-opacity-30 flex items-center justify-center transition-opacity duration-300 group-hover:bg-opacity-40">
+                    <button
+                        class="w-20 h-20 bg-warm-ivory bg-opacity-90 rounded-full flex items-center justify-center text-primary shadow-xl transform transition-transform duration-300 group-hover:scale-110">
+                        <span class="material-symbols-outlined text-4xl ml-2" data-icon="play_arrow">play_arrow</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="py-section-padding-lg px-gutter bg-soft-lilac relative">
+        <div class="max-w-container-max-width mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display-md text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Celebrations
+                    of Love &amp; Life</h2>
+                <div class="w-24 h-1 bg-primary mx-auto opacity-20"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="bg-warm-ivory p-10 text-center rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-surface-variant">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80"
+                        data-icon="favorite">favorite</span>
+                    <h3 class="font-accent-text text-2xl text-primary mb-4">Weddings</h3>
+                    <p class="font-body-md text-on-surface-variant mb-8">Bespoke marriage ceremonies designed to reflect
+                        your unique journey and deep connection.</p>
+                    <a class="text-label-caps font-label-caps text-primary hover:text-secondary-container transition-colors inline-flex items-center space-x-2 border-b border-primary pb-1"
+                        href="#">
+                        <span>Learn More</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <!-- Service 2 -->
+                <div
+                    class="bg-warm-ivory p-10 text-center rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-surface-variant">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80"
+                        data-icon="child_care">child_care</span>
+                    <h3 class="font-accent-text text-2xl text-primary mb-4">Baby Namings</h3>
+                    <p class="font-body-md text-on-surface-variant mb-8">Joyful celebrations to welcome the newest
+                        addition to your family with meaning and love.</p>
+                    <a class="text-label-caps font-label-caps text-primary hover:text-secondary-container transition-colors inline-flex items-center space-x-2 border-b border-primary pb-1"
+                        href="#">
+                        <span>Learn More</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <!-- Service 3 -->
+                <div
+                    class="bg-warm-ivory p-10 text-center rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-surface-variant">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80"
+                        data-icon="history_edu">history_edu</span>
+                    <h3 class="font-accent-text text-2xl text-primary mb-4">Vow Renewals</h3>
+                    <p class="font-body-md text-on-surface-variant mb-8">Reaffirm your commitment and celebrate the
+                        years of love you've shared together.</p>
+                    <a class="text-label-caps font-label-caps text-primary hover:text-secondary-container transition-colors inline-flex items-center space-x-2 border-b border-primary pb-1"
+                        href="#">
+                        <span>Learn More</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-16">
+                <a class="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300"
+                    href="#">
+                    View All Services
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Why Work With Me -->
+    <section class="py-section-padding-lg px-gutter bg-warm-ivory">
+        <div class="max-w-container-max-width mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-display-md text-headline-lg-mobile md:text-headline-lg text-primary mb-8">The Amore
+                        Difference</h2>
+                    <p class="font-body-lg text-on-surface-variant mb-10">Crafting a ceremony is an intimate process.
+                        Here is what you can expect when we embark on this journey together.</p>
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <span class="material-symbols-outlined text-primary mt-1"
+                                data-icon="edit_note">edit_note</span>
+                            <div>
+                                <h4 class="font-accent-text text-xl text-primary mb-2">Heartfelt Storytelling</h4>
+                                <p class="font-body-md text-on-surface-variant">No templates here. Every word is
+                                    carefully chosen to reflect your personalities, your quirks, and your profound bond.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <span class="material-symbols-outlined text-primary mt-1"
+                                data-icon="verified_user">verified_user</span>
+                            <div>
+                                <h4 class="font-accent-text text-xl text-primary mb-2">Professional Execution</h4>
+                                <p class="font-body-md text-on-surface-variant">From legal paperwork to coordinating
+                                    with your vendors on the day, I ensure a seamless, stress-free experience.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <span class="material-symbols-outlined text-primary mt-1"
+                                data-icon="self_improvement">self_improvement</span>
+                            <div>
+                                <h4 class="font-accent-text text-xl text-primary mb-2">A Calm Presence</h4>
+                                <p class="font-body-md text-on-surface-variant">On what can be a nervous day, I bring a
+                                    grounding, reassuring energy to keep you focused on each other.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute inset-0 border-2 border-primary opacity-20 transform translate-x-6 translate-y-6">
+                    </div>
+                    <img alt="Liliana holding ceremony booklet"
+                        class="relative z-10 w-full h-[600px] object-cover shadow-xl filter sepia-[0.05]"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB21sbLKnB442J7T-9E0EBPsCgbFGNS_F2BzNU2UR0JIzVDSCTGlxTkx9NfTy4OtKYSHbdwV8lVYxAeNcSkMkVBWTrd0SsYKcHvHfT1khluSaE5Lf6b52jWZ-nc6qaTaDBSXReFf1cqKFWm3VcELPjVKtJZ62lL5WFfsAlx1mVD2C4rePK6NN7WUh-tKxA-tYLHXUXDz-TcSyVKSUwhAfhAIapYe2qKatuTtrx5kVilm7uNB87TReQw6LGXb1OpZ02mM4cL3ar-VA" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Results Gallery -->
+    <section class="py-section-padding-lg bg-surface">
+        <div
+            class="max-w-container-max-width mx-auto px-gutter mb-12 text-center md:text-left flex flex-col md:flex-row justify-between items-end">
+            <div>
+                <span class="font-accent-text text-primary italic mb-2 block">Gallery</span>
+                <h2 class="font-display-md text-headline-lg-mobile md:text-headline-lg text-primary">Moments of Love
+                </h2>
+            </div>
+            <a class="hidden md:inline-flex items-center text-label-caps font-label-caps text-primary border-b border-primary pb-1 hover:opacity-70 transition-opacity"
+                href="#">
+                View Our Stories
+                <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+            </a>
+        </div>
+        <div
+            class="flex overflow-x-auto pb-8 snap-x snap-mandatory hide-scrollbar gap-6 px-gutter md:px-0 md:max-w-container-max-width md:mx-auto">
+            <img alt="Happy couple walking down aisle"
+                class="w-[80vw] md:w-[400px] h-[500px] object-cover flex-shrink-0 snap-center"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQrltAnWlkx0s60nrKsWo2XHB3mBHixKskPCE7p9uM1t6ng7LELNOuf4rJZgyTQvdfZ2j3Fdm0UbvpVCqzM3rBz5zSPTNEkVhPf_mqKqG4w_siaaXhSOiMMoHvP_67vJ66NnpVJzYNMr5iUL5fwEV5haMaOVFkaXyYLw9UrMFSkgpLzPXRmjFdHmk3sIjQumKcpgX2uPSR19UujHSRouE2jSBBbFxELaH-rmVtMvMIR4RBSFdmxvk6VBKLpaKjSFYb8bqNn6wHYQ" />
+            <img alt="Couple laughing during vows"
+                class="w-[80vw] md:w-[400px] h-[500px] object-cover flex-shrink-0 snap-center"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNRRxdROqIAs5oulAGMQXik1ZmWT-ExLUhKJHaF0wx77Hc62-rt5Lnb-4-TYzC1BaeqWLIR0t9KINe6pa8-wECnf5GOEWgQ-J7mxtRqtswvLlr_Vyg1-Ckl1lgEOvR-9BxQcsMp8MLbp2h4qThmBzsiMKpRvh4kQuvKrll78ujg0Pwbl1GqIkLIu9vG4Zu6ABk5h2hrfwP6NYQHRxNQiyzPNL18jLUv6aQBWrnSG3CUaf7e86h_xVZQmlGq_zu0rdethGsU24rIw" />
+            <img alt="Close up of rings exchange"
+                class="w-[80vw] md:w-[400px] h-[500px] object-cover flex-shrink-0 snap-center"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuANUFIpBtFZ16cCj_9WTsPmbMqFxnYEY6ZwoKDiwOizIdkJWdXAvVmHg0LX3rtooumMH5BL9r0iAKHabQnpc19qtyt2ETZbkyAih99UZarLvDBpeHdgACd7jDmBJdVNMYdFSwncrv8q2EemGMkYBwaKr-iHkg3aHI4YSMVq7_Z4FG-gjmjwZ1mhZpvmjx2FIFPGT0OuWnaOvpMHx_TykotTP1eiiVGW_BY0ZSyMcGF6OceICL74mtCD17Jbc0a8ncyqpptImFXGZQ" />
+        </div>
+        <div class="text-center mt-8 md:hidden">
+            <a class="inline-flex items-center text-label-caps font-label-caps text-primary border-b border-primary pb-1"
+                href="#">
+                View Our Stories
+                <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+            </a>
+        </div>
+    </section>
+    <!-- Get Started Section -->
+    <section class="relative py-32 px-gutter overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img alt="Beautiful landscape for wedding" class="w-full h-full object-cover filter brightness-50"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIxS4-2mcD0uF9diTZYY9qTBNCgNlw1B7TXZwc8E4dgtXuKEOGZROOzSrSrFfbc4IKBpu_rtLKZjxcvl9XvUPmFo4rO_zKC5zsr2kq4VubVsbcRB5dcyjp1dhrZvMwe2FZpH3VN6DznfqIm622NleTwREwj_gTXyiPBZdhfn7CwzLUGzwH7_ju4KlsMB3sgaVSo-K2YDZsxZ4GqMwkBKPV1i3977vxPa6xAUBMitpbnhFXBdEpQKiqKlP575i8Zq3BDgdgMm8-HQ" />
+            <div class="absolute inset-0 bg-primary opacity-40 mix-blend-multiply"></div>
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto text-center text-on-primary">
+            <h2 class="font-display-md text-headline-lg-mobile md:text-headline-lg mb-6">Ready to Begin Your Journey?
+            </h2>
+            <p class="font-body-lg mb-10 opacity-90">Let's sit down for a coffee (or a glass of bubbly) and discuss how
+                we can make your dream ceremony a beautiful reality.</p>
+            <a class="inline-flex items-center justify-center px-10 py-5 bg-warm-ivory text-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:bg-opacity-90 hover:scale-95 transition-all duration-300 shadow-lg"
+                href="#">
+                Inquire Now
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="w-full pt-section-padding-sm pb-8 bg-soft-lilac">
+        <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-gutter max-w-container-max-width mx-auto text-center md:text-left items-center">
+            <div class="flex flex-col space-y-4">
+                <span class="font-accent-text text-accent-text text-primary">Amore Forever</span>
+                <p class="text-body-md font-body-md text-on-surface-variant">
+                    © 2024 Amore Forever with Liliana Paton. All rights reserved.
+                </p>
+            </div>
+            <div class="flex flex-col space-y-4 items-center md:items-start md:pl-12">
+                <a class="text-label-caps font-label-caps text-on-surface-variant hover:text-primary underline transition-all duration-300 opacity-90 hover:opacity-100"
+                    href="#">Privacy Policy</a>
+                <a class="text-label-caps font-label-caps text-on-surface-variant hover:text-primary underline transition-all duration-300 opacity-90 hover:opacity-100"
+                    href="#">Terms of Service</a>
+            </div>
+            <div class="flex flex-col space-y-4 items-center md:items-end">
+                <a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center space-x-2"
+                    href="mailto:lilianapaton897@gmail.com">
+                    <span class="material-symbols-outlined" data-icon="mail">mail</span>
+                    <span>lilianapaton897@gmail.com</span>
+                </a>
+                <a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center space-x-2"
+                    href="tel:0401105586">
+                    <span class="material-symbols-outlined" data-icon="call">call</span>
+                    <span>0401 105 586</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <style>
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <script>
+        // Scroll interaction for Nav
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+                nav.classList.remove('py-6');
+                nav.classList.add('py-2');
+            } else {
+                nav.classList.remove('nav-scrolled');
+                nav.classList.add('py-6');
+                nav.classList.remove('py-2');
+            }
+        });
+    </script>
+</body>
+
+</html>
