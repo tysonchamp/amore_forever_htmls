@@ -30,9 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             mobileMenu.classList.toggle('flex');
+            
+            const isMenuOpen = !mobileMenu.classList.contains('hidden');
+            
+            // Force the button to be purple when the menu is open so it's visible on the white overlay
+            if (isMenuOpen) {
+                mobileBtn.style.setProperty('color', '#6a3987', 'important');
+            } else {
+                mobileBtn.style.removeProperty('color');
+            }
+
             const icon = mobileBtn.querySelector('span');
             if (icon) {
-                icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+                icon.textContent = isMenuOpen ? 'close' : 'menu';
             }
         });
 
@@ -41,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
                 mobileMenu.classList.remove('flex');
+                mobileBtn.style.removeProperty('color');
                 const icon = mobileBtn.querySelector('span');
                 if (icon) icon.textContent = 'menu';
             });
