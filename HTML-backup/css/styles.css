@@ -1,0 +1,254 @@
+/* ============================================================
+   Amore Forever — Consolidated Stylesheet
+   All inline CSS from every page merged into one file.
+   ============================================================ */
+
+/* ---- Base / Global ---- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Material Symbols Icon Defaults ---- */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+.icon-fill {
+    font-variation-settings: 'FILL' 1;
+}
+
+/* ---- Navigation ---- */
+
+/* Standard nav scroll state (light pages) */
+.nav-scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-bottom: 1px solid rgba(132, 82, 161, 0.05);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 4px 20px rgba(132, 82, 161, 0.05);
+}
+
+/* ---- Transition Utilities ---- */
+.slow-out {
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.smooth-transition {
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ---- Hero Section (index.html) ---- */
+.hero-bg {
+    position: relative;
+}
+
+.hero-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 253, 249, 1) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* ---- Fade-In-Up Animation (about-me, general) ---- */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---- Scroll Reveal Animation (service_details) ---- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---- Glass Panel (about-me) ---- */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ---- Service Cards (packages) ---- */
+.service-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 30px rgba(132, 82, 161, 0.08);
+}
+
+/* ---- Contact Form Inputs ---- */
+.input-bottom-border {
+    border: none !important;
+    border-bottom: 1px solid #FFE4B8 !important; /* outline-variant */
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    -webkit-appearance: none;
+}
+
+.input-bottom-border:focus {
+    box-shadow: none !important;
+    border-bottom-color: #8452A1 !important; /* primary */
+    background-color: transparent !important;
+}
+
+/* Fix browser autofill background color to match the page background */
+.input-bottom-border:-webkit-autofill,
+.input-bottom-border:-webkit-autofill:hover, 
+.input-bottom-border:-webkit-autofill:focus, 
+.input-bottom-border:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #FFFFFF inset !important;
+    -webkit-text-fill-color: #000000 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ---- Keyframes ---- */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---- Hide Scrollbar (Gallery) ---- */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* ---- Mobile Menu Overlay ---- */
+#mobile-menu {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#mobile-menu.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-menu.flex {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ---- Nav Logo Image ---- */
+@media (min-width: 768px) {
+    }
+
+.footer-logo-img {
+    height: 150px;
+    width: auto;
+}
+
+/* ---- Transparent Nav (service_details hero) ---- */
+[data-nav-transparent] #mainNav:not(.nav-scrolled) {
+    background-color: transparent !important;
+    border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+
+[data-nav-transparent] #mainNav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-nav-transparent] #mainNav .nav-link.active {
+    color: #FFFFFF;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+[data-nav-transparent] #mainNav .nav-cta {
+    background-color: #8452A1;
+    color: #FFFFFF;
+}
+
+[data-nav-transparent] #mainNav .mobile-menu-btn {
+    color: #FFFFFF;
+}
+
+/* When scrolled (transparent nav becomes solid) */
+[data-nav-transparent] #mainNav.nav-scrolled .nav-link {
+    color: #8452A1;
+    text-shadow: none;
+}
+
+[data-nav-transparent] #mainNav.nav-scrolled .nav-link:hover {
+    color: #8452A1;
+}
+
+[data-nav-transparent] #mainNav.nav-scrolled .nav-link.active {
+    color: #8452A1;
+    border-bottom-color: #8452A1;
+}
+
+[data-nav-transparent] #mainNav.nav-scrolled .nav-cta {
+    background-color: #8452A1;
+}
+
+[data-nav-transparent] #mainNav.nav-scrolled .mobile-menu-btn {
+    color: #8452A1;
+}
+
+/* ---- Logo Banner Styles ---- */
+.banner-placeholder {
+    width: 120px;
+}
+.logo-banner-wrapper {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.1));
+    transition: top 0.3s ease;
+}
+#mainNav.nav-scrolled .logo-banner-wrapper {
+    top: -8px;
+}
+.logo-banner-shape {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    width: 120px;
+    height: 150px;
+    padding: 15px 15px 30px 15px; /* space for the point */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .banner-placeholder {
+        width: 180px;
+    }
+    .logo-banner-shape {
+        width: 180px;
+        height: 220px;
+        padding: 20px 20px 50px 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    }
+}

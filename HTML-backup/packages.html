@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services & Packages - Amore Forever with Liliana Paton</title>
+    <meta name="description" content="Explore bespoke ceremony packages for weddings, baby namings, vow renewals, elopements and more by Liliana Paton." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&amp;family=Hanken+Grotesk:wght@400;600&amp;family=Playfair+Display:ital@0;1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/tailwind-config.js"></script>
+</head>
+
+<body class="bg-white text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-500 ease-out py-6 bg-white/95 backdrop-blur-md border-b border-primary/5 shadow-[0px_4px_20px_rgba(132,82,161,0.05)]" id="mainNav">
+        <div class="flex justify-between items-center h-20 px-gutter max-w-container-max-width mx-auto">
+            <div class="relative h-full flex items-start z-50 banner-placeholder">
+                <div class="logo-banner-wrapper">
+                    <a href="index.html" class="logo-banner-shape">
+                        <img src="images/logo-dark.png" alt="Amore Forever with Liliana Paton" class="w-full h-auto object-contain mt-4" />
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="index.html">Home</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="about-me.html">About Me</a>
+                <a class="nav-link active text-label-caps font-label-caps tracking-widest text-primary border-b-2 border-primary pb-1"
+                    href="packages.html">Services</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="testimonials.html">Testimonials</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="contact.html">Contact</a>
+                <a class="nav-cta ml-8 px-6 py-3 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-80 transition-opacity duration-300 slow-out"
+                    href="contact.html">Inquire Now</a>
+            </div>
+            <button class="mobile-menu-btn md:hidden text-primary p-2" id="mobile-menu-btn">
+                <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Mobile Navigation Overlay -->
+    <div class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center space-y-6 pt-20"
+        id="mobile-menu">
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="index.html">Home</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="about-me.html">About Me</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-primary border-b-2 border-primary pb-1" href="packages.html">Services</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="testimonials.html">Testimonials</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="contact.html">Contact</a>
+        <a class="mt-4 px-6 py-3 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest" href="contact.html">Inquire Now</a>
+    </div>
+    <!-- Header Section -->
+    <section
+        class="pt-[192px] md:pt-[248px] pb-section-padding-sm md:pb-section-padding-lg px-gutter bg-white relative overflow-hidden">
+        <div class="max-w-container-max-width mx-auto text-center relative z-10">
+            <h1 class="font-display-lg text-display-lg text-primary mb-6 fade-in-up">Services &amp; Packages</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto fade-in-up">
+                Every ceremony is a bespoke creation. Explore the foundations below, and let's tailor the perfect
+                experience for your milestone.
+            </p>
+        </div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-fixed/20 rounded-full blur-[120px] pointer-events-none -z-0">
+        </div>
+    </section>
+    <!-- Services Grid -->
+    <main class="py-section-padding-sm md:py-section-padding-lg px-gutter">
+        <div class="max-w-container-max-width mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <!-- Service Card 1: Weddings -->
+                <div
+                    class="bg-white p-10 md:p-16 border border-surface-variant/50 rounded-lg service-card-hover smooth-transition relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <span
+                            class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80">favorite</span>
+                        <h3 class="font-accent-text text-accent-text text-primary mb-4 fade-in-up">Weddings</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">A deeply personal ceremony,
+                            crafted around
+                            your unique love story. From the first consultation to the final "I do," every detail is
+                            tailored to you.
+                        </p>
+                        <ul class="space-y-3 mb-10 font-body-md text-on-surface-variant">
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Multiple in-person or video consultations
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Bespoke ceremony script
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Rehearsal coordination
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                All legal paperwork &amp; lodgement
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center gap-2 text-label-caps font-label-caps text-primary uppercase tracking-widest border-b border-primary pb-1 hover:opacity-70 transition-opacity"
+                            href="service_details.html">
+                            Learn More
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service Card 2: Baby Namings -->
+                <div
+                    class="bg-white p-10 md:p-16 border border-surface-variant/50 rounded-lg service-card-hover smooth-transition relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <span
+                            class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80">child_care</span>
+                        <h3 class="font-accent-text text-accent-text text-primary mb-4 fade-in-up">Baby Namings</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">A joyful, personalised
+                            ceremony to
+                            welcome the newest member of your family. Filled with love, laughter, and meaningful rituals.
+                        </p>
+                        <ul class="space-y-3 mb-10 font-body-md text-on-surface-variant">
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Detailed consultation
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Custom ceremony script
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Naming certificate
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Guidance on rituals &amp; readings
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center gap-2 text-label-caps font-label-caps text-primary uppercase tracking-widest border-b border-primary pb-1 hover:opacity-70 transition-opacity"
+                            href="contact.html">
+                            Inquire Now
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service Card 3: Vow Renewals -->
+                <div
+                    class="bg-white p-10 md:p-16 border border-surface-variant/50 rounded-lg service-card-hover smooth-transition relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <span
+                            class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80">history_edu</span>
+                        <h3 class="font-accent-text text-accent-text text-primary mb-4 fade-in-up">Vow Renewals</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">Celebrate the journey you've
+                            shared.
+                            Whether it's 5 years or 50, honour the depth of your commitment with a beautiful,
+                            heartfelt ceremony.</p>
+                        <ul class="space-y-3 mb-10 font-body-md text-on-surface-variant">
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                In-depth couples consultation
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Bespoke renewal script
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Symbolic rituals
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center gap-2 text-label-caps font-label-caps text-primary uppercase tracking-widest border-b border-primary pb-1 hover:opacity-70 transition-opacity"
+                            href="contact.html">
+                            Inquire Now
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service Card 4: Elopements -->
+                <div
+                    class="bg-white p-10 md:p-16 border border-surface-variant/50 rounded-lg service-card-hover smooth-transition relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <span
+                            class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80">travel_explore</span>
+                        <h3 class="font-accent-text text-accent-text text-primary mb-4 fade-in-up">Elopements</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">An intimate, stripped-back
+                            ceremony just
+                            for the two of you. Simple, profound, and perfectly tailored to your adventurous spirit.
+                        </p>
+                        <ul class="space-y-3 mb-10 font-body-md text-on-surface-variant">
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Streamlined planning
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Personal ceremony script
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Flexible location
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                All legal requirements
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center gap-2 text-label-caps font-label-caps text-primary uppercase tracking-widest border-b border-primary pb-1 hover:opacity-70 transition-opacity"
+                            href="contact.html">
+                            Inquire Now
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Additional Info / FAQ Section -->
+    <section class="py-section-padding-sm md:py-section-padding-lg px-gutter bg-white">
+        <div class="max-w-container-max-width mx-auto text-center">
+            <h2 class="font-display-md text-headline-lg-mobile md:text-headline-lg text-primary mb-6 fade-in-up">
+                Every Ceremony is Unique
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-16 fade-in-up">
+                The packages above are starting points. My approach is always bespoke, so let's chat and build something
+                that
+                feels perfectly, authentically you.
+            </p>
+            <a class="inline-flex items-center justify-center px-10 py-5 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-90 hover:scale-95 transition-all duration-300 slow-out shadow-lg"
+                href="contact.html">
+                Start a Conversation
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="w-full py-section-padding-sm bg-[#FFE4B8] dark:bg-deep-onyx">
+    <div class="flex flex-col items-center justify-center gap-unit max-w-container-max-width mx-auto px-gutter text-center">
+        <a href="index.html">
+            <img src="images/logo-dark.png" alt="Amore Forever" class="footer-logo-img mb-4 dark:hidden" />
+            <img src="images/logo-light.png" alt="Amore Forever" class="footer-logo-img mb-4 hidden dark:block" />
+        </a>
+        <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">Privacy Policy</a>
+            <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">Terms of Service</a>
+            <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="packages.html">Ceremony Guide</a>
+            <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="contact.html">Contact</a>
+        </div>
+        <p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant opacity-70">
+            © 2024 Amore Forever with Liliana Paton. Crafted with editorial grace.
+        </p>
+    </div>
+</footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

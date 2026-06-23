@@ -1,0 +1,92 @@
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            "colors": {
+                "surface-tint": "#8452A1",
+                "on-secondary-container": "#8452A1",
+                "error-container": "#FFE4B8",
+                "on-primary-container": "#FFFFFF",
+                "outline": "#8452A1",
+                "surface-dim": "#FFE4B8",
+                "on-secondary-fixed-variant": "#000000",
+                "on-secondary-fixed": "#000000",
+                "surface-container-highest": "#FFFFFF",
+                "primary-fixed-dim": "#FFFFFF",
+                "on-tertiary": "#FFFFFF",
+                "inverse-surface": "#000000",
+                "soft-lilac": "#FFFFFF",
+                "primary-container": "#8452A1",
+                "background": "#FFFFFF",
+                "tertiary-container": "#000000",
+                "surface-container": "#FFFFFF",
+                "surface": "#FFFFFF",
+                "surface-container-high": "#FFFFFF",
+                "primary-fixed": "#FFFFFF",
+                "surface-variant": "#FFFFFF",
+                "on-tertiary-fixed-variant": "#000000",
+                "tertiary-fixed": "#FFE4B8",
+                "primary": "#8452A1",
+                "inverse-primary": "#FFFFFF",
+                "on-tertiary-fixed": "#000000",
+                "on-error-container": "#000000",
+                "secondary-container": "#FFE4B8",
+                "on-primary": "#FFFFFF",
+                "secondary": "#8452A1",
+                "tertiary-fixed-dim": "#FFE4B8",
+                "on-surface-variant": "#8452A1",
+                "surface-container-low": "#FFFFFF",
+                "error": "#8452A1",
+                "on-surface": "#000000",
+                "surface-bright": "#FFFFFF",
+                "outline-variant": "#FFE4B8",
+                "warm-ivory": "#FFFFFF",
+                "on-primary-fixed-variant": "#8452A1",
+                "deep-onyx": "#000000",
+                "on-primary-fixed": "#000000",
+                "on-background": "#000000",
+                "tertiary": "#000000",
+                "inverse-on-surface": "#FFFFFF",
+                "on-secondary": "#FFFFFF",
+                "secondary-fixed": "#FFE4B8",
+                "on-tertiary-container": "#FFE4B8",
+                "on-error": "#FFFFFF",
+                "surface-container-lowest": "#FFFFFF",
+                "secondary-fixed-dim": "#FFE4B8"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "section-padding-sm": "64px",
+                "unit": "8px",
+                "gutter": "24px",
+                "section-padding-lg": "120px",
+                "container-max-width": "1200px"
+            },
+            "fontFamily": {
+                "display-lg": ["Bodoni Moda"],
+                "headline-lg-mobile": ["Bodoni Moda"],
+                "body-md": ["Hanken Grotesk"],
+                "display-md": ["Bodoni Moda"],
+                "body-lg": ["Hanken Grotesk"],
+                "label-caps": ["Hanken Grotesk"],
+                "headline-lg": ["Bodoni Moda"],
+                "accent-text": ["Playfair Display"]
+            },
+            "fontSize": {
+                "display-lg": ["72px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                "body-md": ["20px", { "lineHeight": "24px", "fontWeight": "400" }],
+                "display-md": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                "label-caps": ["16px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "400" }],
+                "accent-text": ["24px", { "lineHeight": "32px", "fontWeight": "400" }]
+            }
+        }
+    }
+};
