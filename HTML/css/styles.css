@@ -95,7 +95,7 @@ body {
 /* ---- Contact Form Inputs ---- */
 .input-bottom-border {
     border: none !important;
-    border-bottom: 1px solid #FFE4B8 !important; /* outline-variant */
+    border-bottom: 1px solid #cfc3d0 !important; /* outline-variant */
     background-color: transparent !important;
     border-radius: 0 !important;
     padding-left: 0 !important;
@@ -105,7 +105,7 @@ body {
 
 .input-bottom-border:focus {
     box-shadow: none !important;
-    border-bottom-color: #8452A1 !important; /* primary */
+    border-bottom-color: #6a3987 !important; /* primary */
     background-color: transparent !important;
 }
 
@@ -114,8 +114,8 @@ body {
 .input-bottom-border:-webkit-autofill:hover, 
 .input-bottom-border:-webkit-autofill:focus, 
 .input-bottom-border:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px #FFFFFF inset !important;
-    -webkit-text-fill-color: #000000 !important;
+    -webkit-box-shadow: 0 0 0 30px #f9f9f9 inset !important;
+    -webkit-text-fill-color: #1a1c1c !important;
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -179,40 +179,40 @@ body {
 }
 
 [data-nav-transparent] #mainNav .nav-link.active {
-    color: #FFFFFF;
+    color: #ffffff;
     border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
 [data-nav-transparent] #mainNav .nav-cta {
-    background-color: #8452A1;
-    color: #FFFFFF;
+    background-color: #8452a1;
+    color: #ffffff;
 }
 
 [data-nav-transparent] #mainNav .mobile-menu-btn {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 /* When scrolled (transparent nav becomes solid) */
 [data-nav-transparent] #mainNav.nav-scrolled .nav-link {
-    color: #8452A1;
+    color: #4c444f;
     text-shadow: none;
 }
 
 [data-nav-transparent] #mainNav.nav-scrolled .nav-link:hover {
-    color: #8452A1;
+    color: #6a3987;
 }
 
 [data-nav-transparent] #mainNav.nav-scrolled .nav-link.active {
-    color: #8452A1;
-    border-bottom-color: #8452A1;
+    color: #6a3987;
+    border-bottom-color: #6a3987;
 }
 
 [data-nav-transparent] #mainNav.nav-scrolled .nav-cta {
-    background-color: #8452A1;
+    background-color: #6a3987;
 }
 
 [data-nav-transparent] #mainNav.nav-scrolled .mobile-menu-btn {
-    color: #8452A1;
+    color: #6a3987;
 }
 
 /* ---- Logo Banner Styles ---- */
@@ -233,7 +233,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 120px;
     height: 150px;
     padding: 15px 15px 30px 15px; /* space for the point */
