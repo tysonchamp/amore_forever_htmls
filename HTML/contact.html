@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="en">
+<html class="light" lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Contact - Amore Forever with Liliana Paton</title>
+    <meta name="description" content="Get in touch with Liliana Paton to discuss your ceremony. Reach out via phone, email, or the contact form." />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
-        rel="stylesheet" />
-    <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&amp;family=Hanken+Grotesk:wght@400;600&amp;family=Playfair+Display:ital@0;1&amp;display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -106,236 +105,205 @@
                         "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "400" }],
                         "accent-text": ["24px", { "lineHeight": "32px", "fontWeight": "400" }]
                     }
-                },
-            },
+                }
+            }
         }
     </script>
-    <style>
-        .slow-out {
-            transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .input-bottom-border {
-            border: none;
-            border-bottom: 1px solid theme('colors.outline-variant');
-            background: transparent;
-            border-radius: 0;
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .input-bottom-border:focus {
-            box-shadow: none;
-            border-bottom-color: theme('colors.primary');
-        }
-    </style>
 </head>
 
-<body class="bg-background text-on-surface antialiased font-body-md overflow-x-hidden">
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
     <!-- TopNavBar -->
-    <nav
-        class="bg-white/95 dark:bg-surface-container-lowest/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-primary/5 dark:border-primary-container/10 shadow-[0px_4px_20px_rgba(132,82,161,0.05)]">
+    <nav class="fixed top-0 w-full z-50 transition-all duration-500 ease-out py-6 bg-white/95 backdrop-blur-md border-b border-primary/5 shadow-[0px_4px_20px_rgba(132,82,161,0.05)]" id="mainNav">
         <div class="flex justify-between items-center h-20 px-gutter max-w-container-max-width mx-auto">
-            <div
-                class="font-display-lg text-primary dark:text-primary-fixed tracking-tight scale-95 transition-transform duration-300 ease-out">
-                <a href="#">Amore Forever</a>
+            <a href="index.html">
+                <img src="images/logo-dark.png" alt="Amore Forever with Liliana Paton" class="nav-logo-img logo-dark" />
+                <img src="images/logo-light.png" alt="Amore Forever with Liliana Paton" class="nav-logo-img logo-light hidden" />
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="index.html">Home</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="about-me.html">About Me</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="packages.html">Services</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="testimonials.html">Testimonials</a>
+                <a class="nav-link active text-label-caps font-label-caps tracking-widest text-primary border-b-2 border-primary pb-1"
+                    href="contact.html">Contact</a>
+                <a class="nav-cta ml-8 px-6 py-3 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-80 transition-opacity duration-300 slow-out"
+                    href="contact.html">Inquire Now</a>
             </div>
-            <div class="hidden md:flex space-x-8 items-center text-label-caps font-label-caps tracking-widest">
-                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed pb-1 transition-colors duration-300 hover:opacity-80 transition-all duration-500"
-                    href="#">Home</a>
-                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed pb-1 transition-colors duration-300 hover:opacity-80 transition-all duration-500"
-                    href="#">About Me</a>
-                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed pb-1 transition-colors duration-300 hover:opacity-80 transition-all duration-500"
-                    href="#">Services</a>
-                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed pb-1 transition-colors duration-300 hover:opacity-80 transition-all duration-500"
-                    href="#">Testimonials</a>
-                <a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 hover:opacity-80 transition-all duration-500"
-                    href="#">Contact</a>
-            </div>
-            <div class="hidden md:block scale-95 transition-transform duration-300 ease-out">
-                <a class="bg-primary text-white px-6 py-3 rounded text-label-caps font-label-caps tracking-widest hover:opacity-90 transition-opacity"
-                    href="#">Inquire Now</a>
-            </div>
-            <!-- Mobile menu button -->
-            <button class="md:hidden text-primary">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+            <button class="mobile-menu-btn md:hidden text-primary p-2" id="mobile-menu-btn">
+                <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
             </button>
         </div>
     </nav>
-    <!-- Main Content -->
-    <main class="pt-28 pb-section-padding-lg">
-        <!-- Hero Section -->
-        <section class="max-w-container-max-width mx-auto px-gutter mb-section-padding-lg text-center mt-16">
-            <h1 class="font-display-lg text-display-lg mb-6 text-primary">Let’s discuss your day</h1>
+    <!-- Mobile Navigation Overlay -->
+    <div class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center space-y-6 pt-20"
+        id="mobile-menu">
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="index.html">Home</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="about-me.html">About Me</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="packages.html">Services</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="testimonials.html">Testimonials</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-primary border-b-2 border-primary pb-1" href="contact.html">Contact</a>
+        <a class="mt-4 px-6 py-3 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest" href="contact.html">Inquire Now</a>
+    </div>
+    <!-- Header -->
+    <header
+        class="pt-[160px] pb-section-padding-sm md:pb-section-padding-lg px-gutter bg-warm-ivory relative overflow-hidden">
+        <div class="max-w-container-max-width mx-auto text-center relative z-10">
+            <h1 class="font-display-lg text-display-lg text-primary mb-6">Let's Connect</h1>
             <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-                Whether you are just starting to plan or already know what you want, I’m here to help bring your vision
-                to life. Let's create something beautiful together.
+                I'd love to hear your story. Reach out and let's start a conversation about your dream ceremony.
             </p>
-        </section>
-        <!-- Contact Form & Details Grid -->
-        <section class="max-w-container-max-width mx-auto px-gutter mb-section-padding-lg">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                <!-- Contact Details (Left side, 4 columns) -->
-                <div class="lg:col-span-4 bg-warm-ivory p-8 rounded-xl h-fit">
-                    <h2 class="font-headline-lg text-headline-lg mb-8 text-primary">Get in Touch</h2>
+        </div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-fixed/20 rounded-full blur-[120px] pointer-events-none -z-0">
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="py-section-padding-sm md:py-section-padding-lg px-gutter">
+        <div class="max-w-container-max-width mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16">
+                <!-- Contact Information Column -->
+                <div class="md:col-span-5">
+                    <span class="font-accent-text text-primary italic text-xl mb-6 block">Get in Touch</span>
                     <div class="space-y-8">
-                        <div>
-                            <p class="font-label-caps text-label-caps text-outline mb-2">EMAIL</p>
-                            <a class="font-body-lg text-body-lg hover:text-primary transition-colors"
-                                href="mailto:lilianapaton897@gmail.com">lilianapaton897@gmail.com</a>
+                        <div class="flex items-start gap-6 group">
+                            <span
+                                class="material-symbols-outlined text-primary mt-1 icon-fill">mail</span>
+                            <div>
+                                <h3
+                                    class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-2">
+                                    Email</h3>
+                                <a class="font-body-lg text-body-lg text-on-surface hover:text-primary transition-colors duration-300"
+                                    href="mailto:lilianapaton897@gmail.com">lilianapaton897@gmail.com</a>
+                            </div>
                         </div>
-                        <div>
-                            <p class="font-label-caps text-label-caps text-outline mb-2">PHONE</p>
-                            <a class="font-body-lg text-body-lg hover:text-primary transition-colors"
-                                href="tel:0401105586">0401 105 586</a>
+                        <div class="flex items-start gap-6 group">
+                            <span
+                                class="material-symbols-outlined text-primary mt-1 icon-fill">call</span>
+                            <div>
+                                <h3
+                                    class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-2">
+                                    Phone</h3>
+                                <a class="font-body-lg text-body-lg text-on-surface hover:text-primary transition-colors duration-300"
+                                    href="tel:0401105586">0401 105 586</a>
+                            </div>
                         </div>
-                        <div class="pt-8 mt-8 border-t border-surface-variant">
-                            <p class="font-accent-text text-accent-text text-primary">With love,</p>
-                            <p class="font-accent-text text-accent-text text-primary mt-2">Liliana Paton</p>
+                        <div class="flex items-start gap-6 group">
+                            <span
+                                class="material-symbols-outlined text-primary mt-1 icon-fill">location_on</span>
+                            <div>
+                                <h3
+                                    class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-2">
+                                    Based In</h3>
+                                <p class="font-body-lg text-body-lg text-on-surface">Melbourne, Victoria</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="mt-16 pt-12 border-t border-surface-variant">
+                        <p class="font-body-md text-body-md text-on-surface-variant italic">
+                            "The best things in life are the people you love, the places you've been, and the memories
+                            you've made along the way."
+                        </p>
+                    </div>
                 </div>
-                <!-- Contact Form (Right side, 8 columns) -->
-                <div class="lg:col-span-8 bg-white p-8 md:p-12 rounded-xl shadow-[0px_4px_20px_rgba(132,82,161,0.05)]">
-                    <form action="#" class="space-y-10" method="POST">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div class="relative">
-                                <label class="font-label-caps text-label-caps text-outline block mb-2"
-                                    for="name">NAME</label>
-                                <input
-                                    class="w-full input-bottom-border font-body-lg text-body-lg focus:ring-0 focus:border-primary transition-colors"
-                                    id="name" name="name" placeholder="Your full name" required="" type="text" />
-                            </div>
-                            <div class="relative">
-                                <label class="font-label-caps text-label-caps text-outline block mb-2" for="email">EMAIL
-                                    ADDRESS</label>
-                                <input
-                                    class="w-full input-bottom-border font-body-lg text-body-lg focus:ring-0 focus:border-primary transition-colors"
-                                    id="email" name="email" placeholder="hello@example.com" required="" type="email" />
-                            </div>
+                <!-- Form Column -->
+                <div class="md:col-span-6 md:col-start-7">
+                    <form class="space-y-10" id="contact-form">
+                        <div>
+                            <label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-4"
+                                for="name">Full Name</label>
+                            <input
+                                class="w-full py-3 font-body-lg text-body-lg text-on-surface input-bottom-border focus:outline-none transition-all duration-300"
+                                id="name" placeholder="e.g., Claudia & Mario" type="text" />
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div class="relative">
-                                <label class="font-label-caps text-label-caps text-outline block mb-2" for="phone">PHONE
-                                    NUMBER</label>
-                                <input
-                                    class="w-full input-bottom-border font-body-lg text-body-lg focus:ring-0 focus:border-primary transition-colors"
-                                    id="phone" name="phone" placeholder="Best number to reach you" type="tel" />
-                            </div>
-                            <div class="relative">
-                                <label class="font-label-caps text-label-caps text-outline block mb-2"
-                                    for="date">CEREMONY DATE</label>
-                                <input
-                                    class="w-full input-bottom-border font-body-lg text-body-lg focus:ring-0 focus:border-primary transition-colors text-on-surface-variant"
-                                    id="date" name="date" type="date" />
-                            </div>
+                        <div>
+                            <label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-4"
+                                for="email">Email</label>
+                            <input
+                                class="w-full py-3 font-body-lg text-body-lg text-on-surface input-bottom-border focus:outline-none transition-all duration-300"
+                                id="email" placeholder="you@email.com" type="email" />
                         </div>
-                        <div class="relative">
-                            <label class="font-label-caps text-label-caps text-outline block mb-2" for="type">CEREMONY
-                                TYPE</label>
+                        <div>
+                            <label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-4"
+                                for="phone">Phone</label>
+                            <input
+                                class="w-full py-3 font-body-lg text-body-lg text-on-surface input-bottom-border focus:outline-none transition-all duration-300"
+                                id="phone" placeholder="04XX XXX XXX" type="tel" />
+                        </div>
+                        <div>
+                            <label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-4"
+                                for="ceremony-type">Ceremony Type</label>
                             <select
-                                class="w-full input-bottom-border font-body-lg text-body-lg focus:ring-0 focus:border-primary transition-colors text-on-surface-variant appearance-none bg-transparent"
-                                id="type" name="type">
-                                <option disabled="" selected="" value="">Select an option</option>
-                                <option value="wedding">Wedding Ceremony</option>
-                                <option value="elopement">Elopement</option>
-                                <option value="vow-renewal">Vow Renewal</option>
-                                <option value="naming">Naming Ceremony</option>
-                                <option value="other">Other</option>
+                                class="w-full py-3 font-body-lg text-body-lg text-on-surface input-bottom-border focus:outline-none transition-all duration-300 bg-transparent"
+                                id="ceremony-type">
+                                <option>Wedding</option>
+                                <option>Baby Naming</option>
+                                <option>Vow Renewal</option>
+                                <option>Elopement</option>
+                                <option>Commitment Ceremony</option>
+                                <option>Other</option>
                             </select>
                         </div>
-                        <div class="relative">
-                            <label class="font-label-caps text-label-caps text-outline block mb-2" for="message">YOUR
-                                MESSAGE</label>
+                        <div>
+                            <label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-4"
+                                for="date">Preferred Date</label>
+                            <input
+                                class="w-full py-3 font-body-lg text-body-lg text-on-surface input-bottom-border focus:outline-none transition-all duration-300"
+                                id="date" type="date" />
+                        </div>
+                        <div>
+                            <label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-4"
+                                for="message">Your Message</label>
                             <textarea
-                                class="w-full input-bottom-border font-body-lg text-body-lg focus:ring-0 focus:border-primary transition-colors resize-none"
-                                id="message" name="message"
-                                placeholder="Tell me a little bit about yourselves and your vision for the day..."
-                                rows="4"></textarea>
+                                class="w-full py-3 font-body-lg text-body-lg text-on-surface input-bottom-border focus:outline-none transition-all duration-300 resize-none"
+                                id="message" placeholder="Tell me a little about your love story..." rows="4"></textarea>
                         </div>
-                        <div class="pt-4 text-right">
-                            <button
-                                class="bg-primary text-white px-10 py-4 rounded font-label-caps text-label-caps tracking-widest hover:bg-on-primary-fixed-variant transition-colors slow-out"
-                                type="submit">
-                                SEND INQUIRY
-                            </button>
-                        </div>
+                        <button
+                            class="w-full md:w-auto inline-flex items-center justify-center px-10 py-4 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-90 hover:scale-95 transition-all duration-300 slow-out"
+                            type="submit">
+                            Send Your Story
+                        </button>
                     </form>
                 </div>
             </div>
-        </section>
-        <!-- Booking Policy Section -->
-        <section class="bg-soft-lilac py-section-padding-lg">
-            <div class="max-w-container-max-width mx-auto px-gutter">
-                <div class="text-center mb-16">
-                    <h2 class="font-display-md text-display-md text-primary mb-4">Booking Policy</h2>
-                    <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Please review my
-                        booking terms to ensure a smooth and transparent process for your special day.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div class="space-y-8">
-                        <div>
-                            <h3 class="font-headline-lg text-headline-lg-mobile text-on-surface mb-3">Securing Your Date
-                            </h3>
-                            <p class="font-body-md text-body-md text-on-surface-variant">A non-refundable booking fee is
-                                required to secure your chosen date and time in my calendar. Until this fee is received,
-                                the date remains open for other inquiries.</p>
-                        </div>
-                        <div>
-                            <h3 class="font-headline-lg text-headline-lg-mobile text-on-surface mb-3">Final Payment</h3>
-                            <p class="font-body-md text-body-md text-on-surface-variant">The remaining balance for all
-                                services is due no later than 14 days prior to your ceremony date. Invoices will be
-                                provided detailing the payment schedule.</p>
-                        </div>
-                        <div>
-                            <h3 class="font-headline-lg text-headline-lg-mobile text-on-surface mb-3">Cancellations</h3>
-                            <p class="font-body-md text-body-md text-on-surface-variant">In the unfortunate event of a
-                                cancellation, the initial booking fee is retained to cover administrative costs and loss
-                                of potential bookings. Cancellations within 30 days of the ceremony may require full
-                                payment.</p>
-                        </div>
-                    </div>
-                    <div class="relative aspect-[4/5] rounded-xl overflow-hidden group">
-                        <img alt="Wedding details"
-                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                            data-alt="A close-up, high-end editorial photograph of wedding details resting on a textured linen surface. Soft, luminous natural light highlights delicate handwritten calligraphy on a luxury invitation suite, surrounded by subtle floral elements. The color palette features elegant warm ivory, soft lilac, and muted gold tones. The mood is serene, romantic, and highly sophisticated, reflecting a bespoke luxury aesthetic."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrt2d-98ReEaEopQxlyiqHztHAvwPE-bmsjPyF7pdji-0lVZJS4kEkYR9963QIM_KV14ypGdyUl9M2lo93AOzo0Y-qJuwbmfvDUu-TNTFGBq9qXAeoasIMVrfTm4Mfx-vyvmLRWLknjNj8vmI8wv66gmYJ9lkdoPVh8u0cSPzpi7ia82fhWxPLhtoPabWnRU-kncx2m_1MFks3ZiVrz4JrYwOsyCjwWwwrZ_O1zGqz_0WZD7zQxatddE3KVr7sAC1Hy91hePImtA" />
-                        <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
     <!-- Footer -->
-    <footer
-        class="bg-soft-lilac dark:bg-surface-container-lowest w-full pt-section-padding-sm pb-8 bg-warm-ivory dark:bg-surface-container-low text-on-surface dark:text-on-surface-variant opacity-90 hover:opacity-100 transition-opacity">
+    <footer class="w-full pt-section-padding-sm pb-8 bg-soft-lilac">
         <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-gutter max-w-container-max-width mx-auto text-center md:text-left mb-12">
-            <div class="space-y-4">
-                <p class="font-accent-text text-accent-text text-primary dark:text-primary-fixed">Amore Forever</p>
-                <p class="font-body-md text-body-md text-on-surface-variant">Creating luminous, bespoke ceremonies with
-                    elegance and editorial grace.</p>
+            class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-gutter max-w-container-max-width mx-auto text-center md:text-left items-center">
+            <div class="flex flex-col space-y-4 items-center md:items-start">
+                <a href="index.html">
+                    <img src="images/logo-dark.png" alt="Amore Forever" class="footer-logo-img" />
+                </a>
+                <p class="text-body-md font-body-md text-on-surface-variant">
+                    © 2024 Amore Forever with Liliana Paton. All rights reserved.
+                </p>
             </div>
-            <div class="space-y-2">
-                <p class="font-label-caps text-label-caps mb-4">CONTACT</p>
-                <a class="block font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all"
-                    href="mailto:lilianapaton897@gmail.com">lilianapaton897@gmail.com</a>
-                <a class="block font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all"
-                    href="tel:0401105586">0401 105 586</a>
-            </div>
-            <div class="space-y-2">
-                <p class="font-label-caps text-label-caps mb-4">LEGAL</p>
-                <a class="block font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all"
+            <div class="flex flex-col space-y-4 items-center md:items-start md:pl-12">
+                <a class="text-label-caps font-label-caps text-on-surface-variant hover:text-primary underline transition-all duration-300 opacity-90 hover:opacity-100"
                     href="#">Privacy Policy</a>
-                <a class="block font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all"
+                <a class="text-label-caps font-label-caps text-on-surface-variant hover:text-primary underline transition-all duration-300 opacity-90 hover:opacity-100"
                     href="#">Terms of Service</a>
             </div>
-        </div>
-        <div class="text-center border-t border-outline-variant/30 pt-8 max-w-container-max-width mx-auto px-gutter">
-            <p class="font-body-md text-body-md text-on-surface-variant text-sm">© 2024 Amore Forever with Liliana
-                Paton. All rights reserved.</p>
+            <div class="flex flex-col space-y-4 items-center md:items-end">
+                <a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center space-x-2"
+                    href="mailto:lilianapaton897@gmail.com">
+                    <span class="material-symbols-outlined" data-icon="mail">mail</span>
+                    <span>lilianapaton897@gmail.com</span>
+                </a>
+                <a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center space-x-2"
+                    href="tel:0401105586">
+                    <span class="material-symbols-outlined" data-icon="call">call</span>
+                    <span>0401 105 586</span>
+                </a>
+            </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

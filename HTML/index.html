@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Amore Forever with Liliana Paton</title>
+    <meta name="description" content="Ceremonies woven with heart, humour, and a touch of magic. Bespoke marriage celebrant services by Liliana Paton." />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -13,9 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&amp;family=Hanken+Grotesk:wght@400;600&amp;family=Playfair+Display:ital@0;1&amp;display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -110,56 +109,45 @@
             }
         }
     </script>
-    <style>
-        .nav-scrolled {
-            background-color: theme('colors.surface-container-lowest');
-            border-bottom: 1px solid rgba(132, 82, 161, 0.05);
-            backdrop-filter: blur(8px);
-        }
-
-        .hero-bg {
-            position: relative;
-        }
-
-        .hero-bg::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 253, 249, 1) 100%);
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .slow-out {
-            transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-        }
-    </style>
 </head>
 
 <body class="bg-warm-ivory text-on-surface font-body-md text-body-md antialiased overflow-x-hidden">
     <!-- TopNavBar -->
-    <nav class="fixed top-0 w-full z-50 transition-all duration-500 ease-out py-6" id="mainNav">
+    <nav class="fixed top-0 w-full z-50 transition-all duration-500 ease-out py-6 bg-white/95 backdrop-blur-md border-b border-primary/5 shadow-[0px_4px_20px_rgba(132,82,161,0.05)]" id="mainNav">
         <div class="flex justify-between items-center h-20 px-gutter max-w-container-max-width mx-auto">
-            <a class="font-display-lg text-headline-lg text-primary tracking-tight" href="#">Amore Forever</a>
+            <a href="index.html">
+                <img src="images/logo-dark.png" alt="Amore Forever with Liliana Paton" class="nav-logo-img logo-dark" />
+                <img src="images/logo-light.png" alt="Amore Forever with Liliana Paton" class="nav-logo-img logo-light hidden" />
+            </a>
             <div class="hidden md:flex space-x-8 items-center">
-                <a class="text-label-caps font-label-caps tracking-widest text-primary border-b-2 border-primary pb-1"
-                    href="#">Home</a>
-                <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
-                    href="#">About Me</a>
-                <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
-                    href="#">Services</a>
-                <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
-                    href="#">Testimonials</a>
-                <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
-                    href="#">Contact</a>
-                <a class="ml-8 px-6 py-3 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-80 transition-opacity duration-300 slow-out"
-                    href="#">Inquire Now</a>
+                <a class="nav-link active text-label-caps font-label-caps tracking-widest text-primary border-b-2 border-primary pb-1"
+                    href="index.html">Home</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="about-me.html">About Me</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="packages.html">Services</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="testimonials.html">Testimonials</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="contact.html">Contact</a>
+                <a class="nav-cta ml-8 px-6 py-3 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-80 transition-opacity duration-300 slow-out"
+                    href="contact.html">Inquire Now</a>
             </div>
-            <button class="md:hidden text-primary p-2">
-                <span class="material-symbols-outlined" data-icon="menu">menu</span>
+            <button class="mobile-menu-btn md:hidden text-primary p-2" id="mobile-menu-btn">
+                <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
             </button>
         </div>
     </nav>
+    <!-- Mobile Navigation Overlay -->
+    <div class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center space-y-6 pt-20"
+        id="mobile-menu">
+        <a class="text-label-caps font-label-caps tracking-widest text-primary border-b-2 border-primary pb-1" href="index.html">Home</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="about-me.html">About Me</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="packages.html">Services</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="testimonials.html">Testimonials</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="contact.html">Contact</a>
+        <a class="mt-4 px-6 py-3 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest" href="contact.html">Inquire Now</a>
+    </div>
     <!-- Hero Section -->
     <section class="relative min-h-[921px] flex items-center justify-center hero-bg overflow-hidden pt-32 pb-24">
         <!-- Background Image -->
@@ -185,7 +173,7 @@
                 <h3 class="font-accent-text text-accent-text text-primary mb-6 italic text-2xl">The One</h3>
                 <div
                     class="font-accent-text text-on-surface-variant italic text-lg leading-loose space-y-4 max-w-lg mx-auto">
-                    <p>When the one whose hand you’re holding,<br />
+                    <p>When the one whose hand you're holding,<br />
                         Is the one one who holds your heart,<br />
                         When the one whose eyes you gaze into,<br />
                         Gives your hopes and dreams their start,</p>
@@ -195,8 +183,8 @@
                         Make the whole world seem just right,</p>
                     <p>When the one whom you believe in,<br />
                         Puts their faith and trust in you,<br />
-                        You’ve found the one and only love,<br />
-                        You’ll share your whole life through.</p>
+                        You've found the one and only love,<br />
+                        You'll share your whole life through.</p>
                 </div>
                 <p class="font-body-md text-on-surface-variant mt-6 tracking-wider uppercase text-sm">— Author Unknown
                 </p>
@@ -204,7 +192,7 @@
             <div class="opacity-0 transform translate-y-4"
                 style="animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.8s;">
                 <a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-90 hover:scale-95 transition-all duration-300 slow-out"
-                    href="#contact">
+                    href="contact.html">
                     Book Now
                 </a>
             </div>
@@ -290,7 +278,7 @@
                     <p class="font-body-md text-on-surface-variant mb-8">Bespoke marriage ceremonies designed to reflect
                         your unique journey and deep connection.</p>
                     <a class="text-label-caps font-label-caps text-primary hover:text-secondary-container transition-colors inline-flex items-center space-x-2 border-b border-primary pb-1"
-                        href="#">
+                        href="service_details.html">
                         <span>Learn More</span>
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
                     </a>
@@ -304,7 +292,7 @@
                     <p class="font-body-md text-on-surface-variant mb-8">Joyful celebrations to welcome the newest
                         addition to your family with meaning and love.</p>
                     <a class="text-label-caps font-label-caps text-primary hover:text-secondary-container transition-colors inline-flex items-center space-x-2 border-b border-primary pb-1"
-                        href="#">
+                        href="packages.html">
                         <span>Learn More</span>
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
                     </a>
@@ -318,7 +306,7 @@
                     <p class="font-body-md text-on-surface-variant mb-8">Reaffirm your commitment and celebrate the
                         years of love you've shared together.</p>
                     <a class="text-label-caps font-label-caps text-primary hover:text-secondary-container transition-colors inline-flex items-center space-x-2 border-b border-primary pb-1"
-                        href="#">
+                        href="packages.html">
                         <span>Learn More</span>
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
                     </a>
@@ -326,7 +314,7 @@
             </div>
             <div class="text-center mt-16">
                 <a class="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300"
-                    href="#">
+                    href="packages.html">
                     View All Services
                 </a>
             </div>
@@ -393,7 +381,7 @@
                 </h2>
             </div>
             <a class="hidden md:inline-flex items-center text-label-caps font-label-caps text-primary border-b border-primary pb-1 hover:opacity-70 transition-opacity"
-                href="#">
+                href="testimonials.html">
                 View Our Stories
                 <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
             </a>
@@ -412,7 +400,7 @@
         </div>
         <div class="text-center mt-8 md:hidden">
             <a class="inline-flex items-center text-label-caps font-label-caps text-primary border-b border-primary pb-1"
-                href="#">
+                href="testimonials.html">
                 View Our Stories
                 <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
             </a>
@@ -431,7 +419,7 @@
             <p class="font-body-lg mb-10 opacity-90">Let's sit down for a coffee (or a glass of bubbly) and discuss how
                 we can make your dream ceremony a beautiful reality.</p>
             <a class="inline-flex items-center justify-center px-10 py-5 bg-warm-ivory text-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:bg-opacity-90 hover:scale-95 transition-all duration-300 shadow-lg"
-                href="#">
+                href="contact.html">
                 Inquire Now
             </a>
         </div>
@@ -440,8 +428,10 @@
     <footer class="w-full pt-section-padding-sm pb-8 bg-soft-lilac">
         <div
             class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-gutter max-w-container-max-width mx-auto text-center md:text-left items-center">
-            <div class="flex flex-col space-y-4">
-                <span class="font-accent-text text-accent-text text-primary">Amore Forever</span>
+            <div class="flex flex-col space-y-4 items-center md:items-start">
+                <a href="index.html">
+                    <img src="images/logo-dark.png" alt="Amore Forever" class="footer-logo-img" />
+                </a>
                 <p class="text-body-md font-body-md text-on-surface-variant">
                     © 2024 Amore Forever with Liliana Paton. All rights reserved.
                 </p>
@@ -466,43 +456,7 @@
             </div>
         </div>
     </footer>
-    <style>
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hide-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .hide-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
-    <script>
-        // Scroll interaction for Nav
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('mainNav');
-            if (window.scrollY > 50) {
-                nav.classList.add('nav-scrolled');
-                nav.classList.remove('py-6');
-                nav.classList.add('py-2');
-            } else {
-                nav.classList.remove('nav-scrolled');
-                nav.classList.add('py-6');
-                nav.classList.remove('py-2');
-            }
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

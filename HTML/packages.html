@@ -3,422 +3,378 @@
 <html class="light" lang="en">
 
 <head>
-        <meta charset="utf-8" />
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <title>Services &amp; Packages | Amore Forever with Liliana Paton</title>
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
-                rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-                rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-                rel="stylesheet" />
-        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-        <script id="tailwind-config">
-                tailwind.config = {
-                        darkMode: "class",
-                        theme: {
-                                extend: {
-                                        "colors": {
-                                                "surface-tint": "#7b4998",
-                                                "on-secondary-container": "#75623f",
-                                                "error-container": "#ffdad6",
-                                                "on-primary-container": "#f7deff",
-                                                "outline": "#7e7480",
-                                                "surface-dim": "#dadada",
-                                                "on-secondary-fixed-variant": "#554424",
-                                                "on-secondary-fixed": "#261901",
-                                                "surface-container-highest": "#e2e2e2",
-                                                "primary-fixed-dim": "#e6b4ff",
-                                                "on-tertiary": "#ffffff",
-                                                "inverse-surface": "#2f3131",
-                                                "soft-lilac": "#F8F4FA",
-                                                "primary-container": "#8452a1",
-                                                "background": "#f9f9f9",
-                                                "tertiary-container": "#666c00",
-                                                "surface-container": "#eeeeee",
-                                                "surface": "#f9f9f9",
-                                                "surface-container-high": "#e8e8e8",
-                                                "primary-fixed": "#f5d9ff",
-                                                "surface-variant": "#e2e2e2",
-                                                "on-tertiary-fixed-variant": "#464a00",
-                                                "tertiary-fixed": "#e2ea79",
-                                                "primary": "#6a3987",
-                                                "inverse-primary": "#e6b4ff",
-                                                "on-tertiary-fixed": "#1b1d00",
-                                                "on-error-container": "#93000a",
-                                                "secondary-container": "#fadfb3",
-                                                "on-primary": "#ffffff",
-                                                "secondary": "#6f5c39",
-                                                "tertiary-fixed-dim": "#c6cd61",
-                                                "on-surface-variant": "#4c444f",
-                                                "surface-container-low": "#f3f3f4",
-                                                "error": "#ba1a1a",
-                                                "on-surface": "#1a1c1c",
-                                                "surface-bright": "#f9f9f9",
-                                                "outline-variant": "#cfc3d0",
-                                                "warm-ivory": "#FFFDF9",
-                                                "on-primary-fixed-variant": "#61317e",
-                                                "deep-onyx": "#000000",
-                                                "on-primary-fixed": "#30004a",
-                                                "on-background": "#1a1c1c",
-                                                "tertiary": "#4e5300",
-                                                "inverse-on-surface": "#f0f1f1",
-                                                "on-secondary": "#ffffff",
-                                                "secondary-fixed": "#fadfb3",
-                                                "on-tertiary-container": "#e6ee7d",
-                                                "on-error": "#ffffff",
-                                                "surface-container-lowest": "#ffffff",
-                                                "secondary-fixed-dim": "#dcc399"
-                                        },
-                                        "borderRadius": {
-                                                "DEFAULT": "0.125rem",
-                                                "lg": "0.25rem",
-                                                "xl": "0.5rem",
-                                                "full": "0.75rem"
-                                        },
-                                        "spacing": {
-                                                "section-padding-sm": "64px",
-                                                "unit": "8px",
-                                                "gutter": "24px",
-                                                "section-padding-lg": "120px",
-                                                "container-max-width": "1200px"
-                                        },
-                                        "fontFamily": {
-                                                "display-lg": [
-                                                        "Bodoni Moda"
-                                                ],
-                                                "headline-lg-mobile": [
-                                                        "Bodoni Moda"
-                                                ],
-                                                "body-md": [
-                                                        "Hanken Grotesk"
-                                                ],
-                                                "display-md": [
-                                                        "Bodoni Moda"
-                                                ],
-                                                "body-lg": [
-                                                        "Hanken Grotesk"
-                                                ],
-                                                "label-caps": [
-                                                        "Hanken Grotesk"
-                                                ],
-                                                "headline-lg": [
-                                                        "Bodoni Moda"
-                                                ],
-                                                "accent-text": [
-                                                        "Playfair Display"
-                                                ]
-                                        },
-                                        "fontSize": {
-                                                "display-lg": [
-                                                        "72px",
-                                                        {
-                                                                "lineHeight": "84px",
-                                                                "letterSpacing": "-0.02em",
-                                                                "fontWeight": "400"
-                                                        }
-                                                ],
-                                                "headline-lg-mobile": [
-                                                        "32px",
-                                                        {
-                                                                "lineHeight": "40px",
-                                                                "fontWeight": "400"
-                                                        }
-                                                ],
-                                                "body-md": [
-                                                        "16px",
-                                                        {
-                                                                "lineHeight": "24px",
-                                                                "fontWeight": "400"
-                                                        }
-                                                ],
-                                                "display-md": [
-                                                        "56px",
-                                                        {
-                                                                "lineHeight": "64px",
-                                                                "letterSpacing": "-0.01em",
-                                                                "fontWeight": "400"
-                                                        }
-                                                ],
-                                                "body-lg": [
-                                                        "18px",
-                                                        {
-                                                                "lineHeight": "28px",
-                                                                "fontWeight": "400"
-                                                        }
-                                                ],
-                                                "label-caps": [
-                                                        "12px",
-                                                        {
-                                                                "lineHeight": "16px",
-                                                                "letterSpacing": "0.1em",
-                                                                "fontWeight": "600"
-                                                        }
-                                                ],
-                                                "headline-lg": [
-                                                        "40px",
-                                                        {
-                                                                "lineHeight": "48px",
-                                                                "fontWeight": "400"
-                                                        }
-                                                ],
-                                                "accent-text": [
-                                                        "24px",
-                                                        {
-                                                                "lineHeight": "32px",
-                                                                "fontWeight": "400"
-                                                        }
-                                                ]
-                                        }
-                                },
-                        },
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services & Packages - Amore Forever with Liliana Paton</title>
+    <meta name="description" content="Explore bespoke ceremony packages for weddings, baby namings, vow renewals, elopements and more by Liliana Paton." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&amp;family=Hanken+Grotesk:wght@400;600&amp;family=Playfair+Display:ital@0;1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#7b4998",
+                        "on-secondary-container": "#75623f",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#f7deff",
+                        "outline": "#7e7480",
+                        "surface-dim": "#dadada",
+                        "on-secondary-fixed-variant": "#554424",
+                        "on-secondary-fixed": "#261901",
+                        "surface-container-highest": "#e2e2e2",
+                        "primary-fixed-dim": "#e6b4ff",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "soft-lilac": "#F8F4FA",
+                        "primary-container": "#8452a1",
+                        "background": "#f9f9f9",
+                        "tertiary-container": "#666c00",
+                        "surface-container": "#eeeeee",
+                        "surface": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "primary-fixed": "#f5d9ff",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#464a00",
+                        "tertiary-fixed": "#e2ea79",
+                        "primary": "#6a3987",
+                        "inverse-primary": "#e6b4ff",
+                        "on-tertiary-fixed": "#1b1d00",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#fadfb3",
+                        "on-primary": "#ffffff",
+                        "secondary": "#6f5c39",
+                        "tertiary-fixed-dim": "#c6cd61",
+                        "on-surface-variant": "#4c444f",
+                        "surface-container-low": "#f3f3f4",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1a1c1c",
+                        "surface-bright": "#f9f9f9",
+                        "outline-variant": "#cfc3d0",
+                        "warm-ivory": "#FFFDF9",
+                        "on-primary-fixed-variant": "#61317e",
+                        "deep-onyx": "#000000",
+                        "on-primary-fixed": "#30004a",
+                        "on-background": "#1a1c1c",
+                        "tertiary": "#4e5300",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#fadfb3",
+                        "on-tertiary-container": "#e6ee7d",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#dcc399"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-padding-sm": "64px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "section-padding-lg": "120px",
+                        "container-max-width": "1200px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Bodoni Moda"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-md": ["Bodoni Moda"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "accent-text": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["72px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-md": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "400" }],
+                        "accent-text": ["24px", { "lineHeight": "32px", "fontWeight": "400" }]
+                    }
                 }
-        </script>
-        <style>
-                body {
-                        background-color: theme('colors.warm-ivory');
-                        color: theme('colors.on-surface');
-                }
-
-                .material-symbols-outlined {
-                        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-                }
-
-                .service-card-hover:hover {
-                        transform: translateY(-4px);
-                        box-shadow: 0px 12px 30px rgba(132, 82, 161, 0.08);
-                }
-
-                .smooth-transition {
-                        transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-                }
-        </style>
+            }
+        }
+    </script>
 </head>
 
-<body class="font-body-md antialiased overflow-x-hidden min-h-screen flex flex-col">
-        <!-- TopNavBar -->
-        <nav
-                class="bg-white/95 dark:bg-surface-container-lowest/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-primary/5 dark:border-primary-container/10 shadow-[0px_4px_20px_rgba(132,82,161,0.05)]">
-                <div class="flex justify-between items-center h-20 px-gutter max-w-container-max-width mx-auto">
-                        <div
-                                class="font-display-lg text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-all duration-500 cursor-pointer scale-95 transition-transform duration-300 ease-out">
-                                Amore Forever</div>
-                        <div class="hidden md:flex space-x-8 text-label-caps font-label-caps tracking-widest">
-                                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed pb-1 transition-colors duration-300 hover:opacity-80"
-                                        href="#">Home</a>
-                                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed pb-1 transition-colors duration-300 hover:opacity-80"
-                                        href="#">About Me</a>
-                                <a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 hover:opacity-80 transition-all duration-500"
-                                        href="#">Services</a>
-                                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed pb-1 transition-colors duration-300 hover:opacity-80"
-                                        href="#">Testimonials</a>
-                                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed pb-1 transition-colors duration-300 hover:opacity-80"
-                                        href="#">Contact</a>
-                        </div>
-                        <button
-                                class="hidden md:block bg-primary text-on-primary px-6 py-3 rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-90 transition-opacity smooth-transition">Inquire
-                                Now</button>
-                        <button class="md:hidden text-primary">
-                                <span class="material-symbols-outlined text-3xl">menu</span>
-                        </button>
-                </div>
-        </nav>
-        <!-- Main Content -->
-        <main class="flex-grow pt-32 pb-section-padding-lg">
-                <!-- Header Section -->
-                <section class="max-w-container-max-width mx-auto px-gutter text-center mb-section-padding-lg">
-                        <h1 class="font-display-lg text-display-lg text-primary mb-6 md:mb-8 font-light">My Services
-                        </h1>
-                        <p class="font-accent-text text-accent-text text-secondary mb-8 max-w-2xl mx-auto italic">
-                                Beautifully created and designed to guide you from YES to I DO...</p>
-                        <div
-                                class="max-w-3xl mx-auto font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                                <p>Every love story is unique, a deeply personal intertwining of two spirits. My role is
-                                        to translate your connection into a ceremony that feels undeniably authentic to
-                                        you. Whether it's the beginning of a lifelong commitment, a welcoming of new
-                                        life, or a heartfelt farewell, each service is crafted with editorial grace,
-                                        intentional serenity, and sophisticated attention to detail.</p>
-                        </div>
-                </section>
-                <!-- Services Grid -->
-                <section class="max-w-container-max-width mx-auto px-gutter">
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-                                <!-- Service Card 1 -->
-                                <div
-                                        class="bg-warm-ivory rounded-lg overflow-hidden group service-card-hover smooth-transition border border-primary/5 col-span-1 md:col-span-2 lg:col-span-2">
-                                        <div class="flex flex-col md:flex-row h-full">
-                                                <div class="w-full md:w-1/2 h-64 md:h-auto relative overflow-hidden">
-                                                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                                                                data-alt="A sophisticated, editorial-style photograph of an elegant outdoor wedding ceremony setup. Soft, luminous sunlight filters through gently swaying trees, casting serene shadows. The aesthetic is minimal, high-end, and deeply emotional, featuring a delicate floral arch in subtle Purple Passion and warm ivory tones. The composition embodies high luxury, calm, and deeply personal storytelling."
-                                                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4ReFC5o66U945-xbL2b6vpEpTabCJaYiH09iuVJIPrdWd18OwLsyeEb1TP0bLkMk8KKSh1W1JS2LOFzOMTkcrsJANxr4AvJueFLidwuL1FjsFDLCV0i_6-FEmw4t5rpWFTDiXDB1-zuOnJh9MB_abQ0aQGWr1tfrKWpww2EyPV-u5qEIEV6DTrXeUsJmeR5lD_DvH9ECutQ8zuZMXoQx4ploA6REIEH3rVlIoTdl0YXoLmOfqJpnfj0fXlsEoXAdCo4b7Yux5nQ');">
-                                                        </div>
-                                                </div>
-                                                <div
-                                                        class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-secondary-container/20">
-                                                        <h3 class="font-headline-lg text-headline-lg text-primary mb-2">
-                                                                Marriage Celebrant</h3>
-                                                        <div
-                                                                class="font-label-caps text-label-caps text-secondary tracking-widest mb-6 border-b border-primary/10 pb-4 inline-block">
-                                                                $750</div>
-                                                        <p
-                                                                class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3">
-                                                                A bespoke, luminous ceremony tailored entirely to your
-                                                                narrative. We will work together to craft vows and
-                                                                rituals that resonate with your personal style and
-                                                                values, ensuring a moment of pure, uninterrupted
-                                                                elegance.</p>
-                                                        <a class="inline-flex items-center text-primary font-label-caps text-label-caps tracking-widest hover:opacity-70 smooth-transition group/btn"
-                                                                href="#">
-                                                                <span
-                                                                        class="border-b border-primary pb-0.5 mr-2 group-hover/btn:mr-4 smooth-transition">DISCOVER
-                                                                        MORE</span>
-                                                                <span
-                                                                        class="material-symbols-outlined text-sm">arrow_forward</span>
-                                                        </a>
-                                                </div>
-                                        </div>
-                                </div>
-                                <!-- Service Card 2 -->
-                                <div
-                                        class="bg-warm-ivory rounded-lg overflow-hidden group service-card-hover smooth-transition border border-primary/5 flex flex-col">
-                                        <div class="h-56 relative overflow-hidden">
-                                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                                                        data-alt="A serene, minimalist editorial portrait of a newborn baby's hand resting gently on a parent's palm. The lighting is bright, soft, and luminous, utilizing a light mode aesthetic. The color palette features warm ivory, soft lilacs, and subtle yellow auras, evoking a sense of new beginnings, grace, and pure love in a high-end, sophisticated setting."
-                                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCv7gsxtInLl036OuMhiRXLxMmqFTXASkabO_C9f5wYVCAqywbQpuUb-qNLAs4w4gaIkv-rYoRtjeEpB4sAV_Opj_2V90uTPJfltlYFwiyxn0MY_pE04lTbcXKMYp0g96lgJZvU9ibncCszQ27Y3CUhsMyeay2ZDcGt-3eHb9VqWOq3EU1kB00KhSAFoKYixHK4hUdmAMEyvHYtVcdlOZbQhIxYVgKMGKXYMIafpRPLbVFwRZDQEscM2OD7uV7vgFha9VR2G8prwQ');">
-                                                </div>
-                                        </div>
-                                        <div class="p-8 flex flex-col flex-grow bg-white">
-                                                <h3 class="font-headline-lg text-headline-lg-mobile text-primary mb-2">
-                                                        Baby Naming Ceremony</h3>
-                                                <div
-                                                        class="font-label-caps text-label-caps text-secondary tracking-widest mb-4 border-b border-primary/10 pb-2 inline-block">
-                                                        $500</div>
-                                                <p
-                                                        class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
-                                                        A gentle, joyful welcoming of new life, surrounded by those who
-                                                        matter most.</p>
-                                                <a class="inline-flex items-center text-primary font-label-caps text-label-caps tracking-widest hover:opacity-70 smooth-transition group/btn mt-auto"
-                                                        href="#">
-                                                        <span
-                                                                class="border-b border-primary pb-0.5 mr-2 group-hover/btn:mr-4 smooth-transition">INQUIRE</span>
-                                                        <span
-                                                                class="material-symbols-outlined text-sm">arrow_forward</span>
-                                                </a>
-                                        </div>
-                                </div>
-                                <!-- Service Card 3 -->
-                                <div
-                                        class="bg-warm-ivory rounded-lg overflow-hidden group service-card-hover smooth-transition border border-primary/5 flex flex-col">
-                                        <div class="h-56 relative overflow-hidden">
-                                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                                                        data-alt="A timeless, black-and-white tinted, highly artistic photograph of a mature couple holding hands, focusing on the details of their intertwined fingers and worn wedding bands. The composition uses intentional negative space and elegant framing. The mood is enduring, romantic, and steeped in history, reflecting a premium editorial style consistent with a high-end celebrant's brand."
-                                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSr342OeCc6B5ZXd5jJBoHjISmD-fpOvwfXuStlFlxhz3GDqcy4856vN5ID9QP2XUE3gmW1Jap20yMizsapaQsrQjtCQweIytp3mBWeofuOD8Mf5cyMCSDwiCVwzx1DtUULO20FtfN8uiowjX2t6_0ff82l7o3KWi6S5Nd9mBmdZI5-XcWLR4RVNAD6NA6MZTcS0WYgWoNS6p4ZS4Wug1h9j4N9MG2rGpQtX1Ztag3uqXcCDbeBd7aVEbm35Qq_SY_v8uhXXvLCA');">
-                                                </div>
-                                        </div>
-                                        <div class="p-8 flex flex-col flex-grow bg-white">
-                                                <h3 class="font-headline-lg text-headline-lg-mobile text-primary mb-2">
-                                                        Renewal of Vows</h3>
-                                                <div
-                                                        class="font-label-caps text-label-caps text-secondary tracking-widest mb-4 border-b border-primary/10 pb-2 inline-block">
-                                                        $500</div>
-                                                <p
-                                                        class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
-                                                        Reaffirm your enduring love with a sophisticated celebration of
-                                                        your journey together.</p>
-                                                <a class="inline-flex items-center text-primary font-label-caps text-label-caps tracking-widest hover:opacity-70 smooth-transition group/btn mt-auto"
-                                                        href="#">
-                                                        <span
-                                                                class="border-b border-primary pb-0.5 mr-2 group-hover/btn:mr-4 smooth-transition">INQUIRE</span>
-                                                        <span
-                                                                class="material-symbols-outlined text-sm">arrow_forward</span>
-                                                </a>
-                                        </div>
-                                </div>
-                                <!-- Service Card 4 -->
-                                <div
-                                        class="bg-warm-ivory rounded-lg overflow-hidden group service-card-hover smooth-transition border border-primary/5 flex flex-col">
-                                        <div class="h-56 relative overflow-hidden">
-                                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                                                        data-alt="A tranquil, minimalist landscape photography shot of a misty lake at dawn. The colors are muted, featuring soft lilacs, pale greys, and warm ivory tones reflecting off the still water. The scene is deeply calming, respectful, and elegant, embodying the serene and graceful approach to honoring a life well-lived in a sophisticated, premium brand style."
-                                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAfbnNJnoFyx3wGYjMcB1ByqWM_DbcFndqaE9lkUVF7Ybn10JG-VJFVwFLumHG9t7kh_ynMd_w7FKNLibyWD7RRt13bopD9V4en5yBhivfTVggR_hWaKW-TFoedgVcYerZMetFXZIz_NUNuUy89Z-8us5vgMzSze_6o4-p9EeZT82LvK9p_gtXmza-fU27QGH8LF7d2cP5s-P1zn9hiaJWYaVUHMPMcpfKinMTKK6X0wgtX9_59KGxJessV369_wQYlBlvw52c75A');">
-                                                </div>
-                                        </div>
-                                        <div class="p-8 flex flex-col flex-grow bg-white">
-                                                <h3 class="font-headline-lg text-headline-lg-mobile text-primary mb-2">
-                                                        Funeral Services</h3>
-                                                <div
-                                                        class="font-label-caps text-label-caps text-secondary tracking-widest mb-4 border-b border-primary/10 pb-2 inline-block">
-                                                        $500</div>
-                                                <p
-                                                        class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
-                                                        A respectful, deeply personal tribute delivered with grace,
-                                                        empathy, and serene elegance.</p>
-                                                <a class="inline-flex items-center text-primary font-label-caps text-label-caps tracking-widest hover:opacity-70 smooth-transition group/btn mt-auto"
-                                                        href="#">
-                                                        <span
-                                                                class="border-b border-primary pb-0.5 mr-2 group-hover/btn:mr-4 smooth-transition">INQUIRE</span>
-                                                        <span
-                                                                class="material-symbols-outlined text-sm">arrow_forward</span>
-                                                </a>
-                                        </div>
-                                </div>
-                                <!-- Service Card 5 -->
-                                <div
-                                        class="bg-warm-ivory rounded-lg overflow-hidden group service-card-hover smooth-transition border border-primary/5 flex flex-col">
-                                        <div class="h-56 relative overflow-hidden">
-                                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                                                        data-alt="An editorial, close-up shot of an elegant microphone standing in focus against a blurred, warmly lit background of an upscale reception venue. Subtle yellow auras and soft ambient lighting create a celebratory yet refined atmosphere. The image feels professional, engaging, and high-end, representing a master of ceremonies managing a luxurious, seamless event."
-                                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwwYwctYL5ODUcyrYwQYTjPbGN1wSpt_JYqnyEy_4fUqzeUGBeZL8DMbptTpLDfMeBqTG-t0lx8XlAaBudT3z6nCy9I2YL5Z3eb762Ek853TGG5k1zDb1FdwbnuBk7lQ-8nMr6f_wq_WMH9Wz3wJumRJKm6GMuMjzpkQv18VSAt661MigWXGi5IHZmI0B_gGi2Gruia9BSPHe3KUjygRoxdqL-2dunoXdvp5C_VO_sHhYvkmB75ypzXIhCd1SGdwmOFS6witgQfA');">
-                                                </div>
-                                        </div>
-                                        <div class="p-8 flex flex-col flex-grow bg-white">
-                                                <h3 class="font-headline-lg text-headline-lg-mobile text-primary mb-2">
-                                                        MC Services</h3>
-                                                <div
-                                                        class="font-label-caps text-label-caps text-secondary tracking-widest mb-4 border-b border-primary/10 pb-2 inline-block">
-                                                        $400</div>
-                                                <p
-                                                        class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
-                                                        Professional, charismatic orchestration of your reception,
-                                                        allowing you to simply enjoy the moment.</p>
-                                                <a class="inline-flex items-center text-primary font-label-caps text-label-caps tracking-widest hover:opacity-70 smooth-transition group/btn mt-auto"
-                                                        href="#">
-                                                        <span
-                                                                class="border-b border-primary pb-0.5 mr-2 group-hover/btn:mr-4 smooth-transition">INQUIRE</span>
-                                                        <span
-                                                                class="material-symbols-outlined text-sm">arrow_forward</span>
-                                                </a>
-                                        </div>
-                                </div>
-                        </div>
-                </section>
-        </main>
-        <!-- Footer -->
-        <footer class="bg-soft-lilac dark:bg-surface-container-lowest w-full pt-section-padding-sm pb-8">
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-500 ease-out py-6 bg-white/95 backdrop-blur-md border-b border-primary/5 shadow-[0px_4px_20px_rgba(132,82,161,0.05)]" id="mainNav">
+        <div class="flex justify-between items-center h-20 px-gutter max-w-container-max-width mx-auto">
+            <a href="index.html">
+                <img src="images/logo-dark.png" alt="Amore Forever with Liliana Paton" class="nav-logo-img logo-dark" />
+                <img src="images/logo-light.png" alt="Amore Forever with Liliana Paton" class="nav-logo-img logo-light hidden" />
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="index.html">Home</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="about-me.html">About Me</a>
+                <a class="nav-link active text-label-caps font-label-caps tracking-widest text-primary border-b-2 border-primary pb-1"
+                    href="packages.html">Services</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="testimonials.html">Testimonials</a>
+                <a class="nav-link text-label-caps font-label-caps tracking-widest text-on-surface-variant hover:text-primary pb-1 transition-colors duration-300"
+                    href="contact.html">Contact</a>
+                <a class="nav-cta ml-8 px-6 py-3 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-80 transition-opacity duration-300 slow-out"
+                    href="contact.html">Inquire Now</a>
+            </div>
+            <button class="mobile-menu-btn md:hidden text-primary p-2" id="mobile-menu-btn">
+                <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Mobile Navigation Overlay -->
+    <div class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center space-y-6 pt-20"
+        id="mobile-menu">
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="index.html">Home</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="about-me.html">About Me</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-primary border-b-2 border-primary pb-1" href="packages.html">Services</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="testimonials.html">Testimonials</a>
+        <a class="text-label-caps font-label-caps tracking-widest text-on-surface-variant" href="contact.html">Contact</a>
+        <a class="mt-4 px-6 py-3 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest" href="contact.html">Inquire Now</a>
+    </div>
+    <!-- Header Section -->
+    <section
+        class="pt-[160px] pb-section-padding-sm md:pb-section-padding-lg px-gutter bg-warm-ivory relative overflow-hidden">
+        <div class="max-w-container-max-width mx-auto text-center relative z-10">
+            <h1 class="font-display-lg text-display-lg text-primary mb-6">Services &amp; Packages</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Every ceremony is a bespoke creation. Explore the foundations below, and let's tailor the perfect
+                experience for your milestone.
+            </p>
+        </div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-fixed/20 rounded-full blur-[120px] pointer-events-none -z-0">
+        </div>
+    </section>
+    <!-- Services Grid -->
+    <main class="py-section-padding-sm md:py-section-padding-lg px-gutter">
+        <div class="max-w-container-max-width mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <!-- Service Card 1: Weddings -->
                 <div
-                        class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-gutter max-w-container-max-width mx-auto text-center md:text-left">
-                        <div class="mb-8 md:mb-0">
+                    class="bg-warm-ivory p-10 md:p-16 border border-surface-variant/50 rounded-lg service-card-hover smooth-transition relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <span
+                            class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80">favorite</span>
+                        <h3 class="font-accent-text text-accent-text text-primary mb-4">Weddings</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">A deeply personal ceremony,
+                            crafted around
+                            your unique love story. From the first consultation to the final "I do," every detail is
+                            tailored to you.
+                        </p>
+                        <ul class="space-y-3 mb-10 font-body-md text-on-surface-variant">
+                            <li class="flex items-center gap-3">
                                 <span
-                                        class="font-accent-text text-accent-text text-primary dark:text-primary-fixed block mb-4">Amore
-                                        Forever</span>
-                                <p class="text-body-md font-body-md text-on-surface dark:text-on-surface-variant">© 2024
-                                        Amore Forever with Liliana Paton. All rights reserved.</p>
-                        </div>
-                        <div
-                                class="flex flex-col space-y-4 text-label-caps font-label-caps items-center md:items-start mb-8 md:mb-0">
-                                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all opacity-90 hover:opacity-100 transition-opacity"
-                                        href="#">Privacy Policy</a>
-                                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all opacity-90 hover:opacity-100 transition-opacity"
-                                        href="#">Terms of Service</a>
-                        </div>
-                        <div class="flex flex-col space-y-4 text-label-caps font-label-caps items-center md:items-end">
-                                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all opacity-90 hover:opacity-100 transition-opacity"
-                                        href="mailto:lilianapaton897@gmail.com">lilianapaton897@gmail.com</a>
-                                <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-all opacity-90 hover:opacity-100 transition-opacity"
-                                        href="tel:0401105586">0401 105 586</a>
-                        </div>
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Multiple in-person or video consultations
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Bespoke ceremony script
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Rehearsal coordination
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                All legal paperwork &amp; lodgement
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center gap-2 text-label-caps font-label-caps text-primary uppercase tracking-widest border-b border-primary pb-1 hover:opacity-70 transition-opacity"
+                            href="service_details.html">
+                            Learn More
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
                 </div>
-        </footer>
+                <!-- Service Card 2: Baby Namings -->
+                <div
+                    class="bg-warm-ivory p-10 md:p-16 border border-surface-variant/50 rounded-lg service-card-hover smooth-transition relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <span
+                            class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80">child_care</span>
+                        <h3 class="font-accent-text text-accent-text text-primary mb-4">Baby Namings</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">A joyful, personalised
+                            ceremony to
+                            welcome the newest member of your family. Filled with love, laughter, and meaningful rituals.
+                        </p>
+                        <ul class="space-y-3 mb-10 font-body-md text-on-surface-variant">
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Detailed consultation
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Custom ceremony script
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Naming certificate
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Guidance on rituals &amp; readings
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center gap-2 text-label-caps font-label-caps text-primary uppercase tracking-widest border-b border-primary pb-1 hover:opacity-70 transition-opacity"
+                            href="contact.html">
+                            Inquire Now
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service Card 3: Vow Renewals -->
+                <div
+                    class="bg-warm-ivory p-10 md:p-16 border border-surface-variant/50 rounded-lg service-card-hover smooth-transition relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <span
+                            class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80">history_edu</span>
+                        <h3 class="font-accent-text text-accent-text text-primary mb-4">Vow Renewals</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">Celebrate the journey you've
+                            shared.
+                            Whether it's 5 years or 50, honour the depth of your commitment with a beautiful,
+                            heartfelt ceremony.</p>
+                        <ul class="space-y-3 mb-10 font-body-md text-on-surface-variant">
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                In-depth couples consultation
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Bespoke renewal script
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Symbolic rituals
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center gap-2 text-label-caps font-label-caps text-primary uppercase tracking-widest border-b border-primary pb-1 hover:opacity-70 transition-opacity"
+                            href="contact.html">
+                            Inquire Now
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service Card 4: Elopements -->
+                <div
+                    class="bg-warm-ivory p-10 md:p-16 border border-surface-variant/50 rounded-lg service-card-hover smooth-transition relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <span
+                            class="material-symbols-outlined text-primary text-4xl mb-6 opacity-80">travel_explore</span>
+                        <h3 class="font-accent-text text-accent-text text-primary mb-4">Elopements</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">An intimate, stripped-back
+                            ceremony just
+                            for the two of you. Simple, profound, and perfectly tailored to your adventurous spirit.
+                        </p>
+                        <ul class="space-y-3 mb-10 font-body-md text-on-surface-variant">
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Streamlined planning
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Personal ceremony script
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Flexible location
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                All legal requirements
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center gap-2 text-label-caps font-label-caps text-primary uppercase tracking-widest border-b border-primary pb-1 hover:opacity-70 transition-opacity"
+                            href="contact.html">
+                            Inquire Now
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Additional Info / FAQ Section -->
+    <section class="py-section-padding-sm md:py-section-padding-lg px-gutter bg-soft-lilac">
+        <div class="max-w-container-max-width mx-auto text-center">
+            <h2 class="font-display-md text-headline-lg-mobile md:text-headline-lg text-primary mb-6">
+                Every Ceremony is Unique
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-16">
+                The packages above are starting points. My approach is always bespoke, so let's chat and build something
+                that
+                feels perfectly, authentically you.
+            </p>
+            <a class="inline-flex items-center justify-center px-10 py-5 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest hover:opacity-90 hover:scale-95 transition-all duration-300 slow-out shadow-lg"
+                href="contact.html">
+                Start a Conversation
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="w-full pt-section-padding-sm pb-8 bg-soft-lilac">
+        <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-gutter max-w-container-max-width mx-auto text-center md:text-left items-center">
+            <div class="flex flex-col space-y-4 items-center md:items-start">
+                <a href="index.html">
+                    <img src="images/logo-dark.png" alt="Amore Forever" class="footer-logo-img" />
+                </a>
+                <p class="text-body-md font-body-md text-on-surface-variant">
+                    © 2024 Amore Forever with Liliana Paton. All rights reserved.
+                </p>
+            </div>
+            <div class="flex flex-col space-y-4 items-center md:items-start md:pl-12">
+                <a class="text-label-caps font-label-caps text-on-surface-variant hover:text-primary underline transition-all duration-300 opacity-90 hover:opacity-100"
+                    href="#">Privacy Policy</a>
+                <a class="text-label-caps font-label-caps text-on-surface-variant hover:text-primary underline transition-all duration-300 opacity-90 hover:opacity-100"
+                    href="#">Terms of Service</a>
+            </div>
+            <div class="flex flex-col space-y-4 items-center md:items-end">
+                <a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center space-x-2"
+                    href="mailto:lilianapaton897@gmail.com">
+                    <span class="material-symbols-outlined" data-icon="mail">mail</span>
+                    <span>lilianapaton897@gmail.com</span>
+                </a>
+                <a class="text-body-md font-body-md text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center space-x-2"
+                    href="tel:0401105586">
+                    <span class="material-symbols-outlined" data-icon="call">call</span>
+                    <span>0401 105 586</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
