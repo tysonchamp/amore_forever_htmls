@@ -146,14 +146,14 @@ body {
 
 /* ---- Nav Logo Image ---- */
 .nav-logo-img {
-    height: 48px;
+    height: 90px;
     width: auto;
     transition: all 0.3s ease;
 }
 
 @media (min-width: 768px) {
     .nav-logo-img {
-        height: 56px;
+        height: 120px;
     }
 }
 
@@ -163,10 +163,11 @@ body {
 }
 
 /* ---- Transparent Nav (service_details hero) ---- */
-[data-nav-transparent] #mainNav {
+[data-nav-transparent] #mainNav:not(.nav-scrolled) {
     background-color: transparent !important;
-    border-bottom-color: rgba(255, 255, 255, 0.1);
-    box-shadow: none;
+    border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
 }
 
 [data-nav-transparent] #mainNav .nav-logo-img.logo-dark {

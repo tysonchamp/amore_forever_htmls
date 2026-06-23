@@ -18,7 +18,7 @@
     <script src="js/tailwind-config.js"></script>
 </head>
 
-<body class="bg-warm-ivory text-on-surface font-body-md text-body-md antialiased overflow-x-hidden">
+<body data-nav-transparent class="bg-warm-ivory text-on-surface font-body-md text-body-md antialiased overflow-x-hidden">
     <!-- TopNavBar -->
     <nav class="fixed top-0 w-full z-50 transition-all duration-500 ease-out py-6 bg-white/95 backdrop-blur-md border-b border-primary/5 shadow-[0px_4px_20px_rgba(132,82,161,0.05)]" id="mainNav">
         <div class="flex justify-between items-center h-20 px-gutter max-w-container-max-width mx-auto">
@@ -56,30 +56,32 @@
         <a class="mt-4 px-6 py-3 bg-primary text-on-primary rounded-DEFAULT text-label-caps font-label-caps tracking-widest" href="contact.html">Inquire Now</a>
     </div>
     <!-- Hero Section -->
-    <section class="relative min-h-[921px] flex items-center justify-center hero-bg overflow-hidden pt-32 pb-24">
+    <section class="relative min-h-[921px] flex items-center justify-center overflow-hidden pt-32 pb-24">
         <!-- Background Image -->
         <div class="absolute inset-0 w-full h-full object-cover z-0"
             data-alt="A luminous, sunlit outdoor wedding ceremony moment."
             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXqtnkOROUgVe3jvMJp8gfkP5oc1TzVzhXcQyJyah8PcRsAQBPMTHc0irO2yPGtMO4czy-HqReohE8G0b_3GdUbqSJEop1I5nQOAl-5Rsyzvnh1_V2Z_CKcXe6XJv_AjP4EcsrZzMIuTqPyBcRuAhXrRXm-WcvUzSWncoSM6cEy113sDD-5_wEOBnY1_qKPG405uNKmzkoG2GPwgvuQfdAMXnXJysHO4G27jx6ojrsHAvkiK1QUVv2IakOdqFS0FlvO6na9bJmNQ'); background-size: cover; background-position: center;">
         </div>
+        <div class="absolute inset-0 bg-deep-onyx/40 z-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-deep-onyx/30 via-transparent to-deep-onyx/20 z-0"></div>
         <div class="relative z-10 text-center px-gutter max-w-4xl mx-auto flex flex-col items-center pt-24">
             <span
-                class="font-accent-text text-accent-text text-primary mb-6 italic opacity-0 transform translate-y-4 animate-fade-up"
+                class="font-accent-text text-accent-text text-warm-ivory mb-6 italic opacity-0 transform translate-y-4 animate-fade-up"
                 style="animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.2s;">Welcome to</span>
-            <h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-8 opacity-0 transform translate-y-4 leading-tight"
+            <h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-warm-ivory mb-8 opacity-0 transform translate-y-4 leading-tight"
                 style="animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.4s;">
                 Amore Forever with Liliana Paton
             </h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12 opacity-0 transform translate-y-4"
+            <p class="font-body-lg text-body-lg text-warm-ivory/90 max-w-2xl mx-auto mb-12 opacity-0 transform translate-y-4"
                 style="animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.6s;">
                 Ceremonies woven with heart, humour, and a touch of magic.
             </p>
             <!-- Poem -->
             <div class="mt-8 mb-16 opacity-0 transform translate-y-4"
                 style="animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.7s;">
-                <h3 class="font-accent-text text-accent-text text-primary mb-6 italic text-2xl">The One</h3>
+                <h3 class="font-accent-text text-accent-text text-warm-ivory mb-6 italic text-2xl">The One</h3>
                 <div
-                    class="font-accent-text text-on-surface-variant italic text-lg leading-loose space-y-4 max-w-lg mx-auto">
+                    class="font-accent-text text-warm-ivory/90 italic text-lg leading-loose space-y-4 max-w-lg mx-auto">
                     <p>When the one whose hand you're holding,<br />
                         Is the one one who holds your heart,<br />
                         When the one whose eyes you gaze into,<br />
@@ -93,7 +95,7 @@
                         You've found the one and only love,<br />
                         You'll share your whole life through.</p>
                 </div>
-                <p class="font-body-md text-on-surface-variant mt-6 tracking-wider uppercase text-sm">— Author Unknown
+                <p class="font-body-md text-warm-ivory/80 mt-6 tracking-wider uppercase text-sm">— Author Unknown
                 </p>
             </div>
             <div class="opacity-0 transform translate-y-4"
@@ -126,7 +128,7 @@
                         Every ceremony begins as a quiet spark.
                     </h2>
                     <div class="space-y-6">
-                        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        <p class="font-body-lg text-body-lg text-warm-ivory/90 leading-relaxed">
                             A story waiting to be honoured, a promise ready to be spoken, a milestone deserving of a
                             special celebration...
                         </p>
