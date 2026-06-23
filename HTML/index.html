@@ -156,11 +156,17 @@
                 ceremonies we've brought to life.</p>
         </div>
         <div class="max-w-5xl mx-auto px-gutter">
-            <div class="relative w-full aspect-video bg-surface-variant rounded-lg overflow-hidden shadow-lg fade-in-up">
-                <video class="w-full h-full object-cover" controls preload="metadata">
+            <div class="relative w-full aspect-video bg-surface-variant rounded-lg overflow-hidden shadow-lg fade-in-up group cursor-pointer" id="custom-video-container">
+                <video class="w-full h-full object-cover" id="promo-video" preload="metadata" poster="images/detail_rings.png">
                     <source src="video/video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                <div id="video-overlay" class="absolute inset-0 bg-deep-onyx bg-opacity-30 flex items-center justify-center transition-opacity duration-300">
+                    <button id="play-pause-btn" style="border-radius: 50%;"
+                        class="w-24 h-24 bg-warm-ivory bg-opacity-90 flex items-center justify-center text-primary shadow-xl transform transition-transform duration-300 group-hover:scale-110">
+                        <span class="material-symbols-outlined text-[56px] ml-2" id="play-icon">play_arrow</span>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
